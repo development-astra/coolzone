@@ -1,0 +1,205 @@
+/* =========================
+   PROS SECTION (BG IMAGE + RESPONSIVE)
+========================= */
+
+.pros {
+    position: relative;
+    padding: 72px 0;
+    background: #fff;
+    overflow: hidden;
+}
+
+.pros::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/pro-bg.png") center / cover no-repeat;
+    z-index: 0;
+}
+
+/* Soft white fade on right side so text is readable */
+.pros::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 0.45) 45%,
+            rgba(255, 255, 255, 0.92) 70%,
+            rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
+.pros-inner {
+    width: min(1250px, calc(100% - 48px));
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    /* left side empty-ish, right side content */
+    gap: 30px;
+    align-items: center;
+    min-height: 520px;
+}
+
+/* content on right */
+.pros-content {
+    max-width: 820px;
+    margin-left: auto;
+}
+
+.pros-title {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 44px;
+    line-height: 1.05;
+    color: #121212;
+    margin: 0 0 22px;
+    text-transform: uppercase;
+}
+
+.pros-list {
+    display: grid;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pros-item {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 14px;
+    align-items: start;
+}
+
+.pros-badge {
+    width: 48px;
+    height: 28px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    margin-top: 2px;
+}
+
+.pros-badge svg {
+    width: 48px;
+    height: 28px;
+    display: block;
+}
+
+.pros-item strong {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 800;
+    color: #121212;
+    font-size: 20px;
+}
+
+.pros-item p {
+    margin: 6px 0 0;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.45;
+    font-size: 20px;
+}
+
+.pros-cta {
+    margin-top: 26px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pros-btn {
+    background: #10b84a;
+    color: #fff;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 420px;
+    transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.pros-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+    .pros-inner {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 36px 0;
+    }
+
+    .pros-content {
+        margin-left: 0;
+        max-width: 720px;
+    }
+
+    .pros::after {
+        background: rgba(255, 255, 255, 0.92);
+    }
+}
+
+/* =========================
+   PROS - MOBILE FIX (header overlap + spacing)
+========================= */
+@media (max-width: 640px) {
+
+    /* ✅ add safe space at the top so the title won't be covered */
+    .pros {
+        padding-top: 1px !important;
+        /* was too big */
+        padding-bottom: 40px;
+    }
+
+    .pros-inner {
+        min-height: auto !important;
+        /* remove forced tall section */
+        padding-top: 0 !important;
+    }
+
+    /* if you kept an empty left column div, make sure it doesn't create space */
+    .pros-inner>div:first-child {
+        display: none !important;
+    }
+
+    /* title spacing */
+    .pros-title {
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-size: 30px;
+        line-height: 1.08;
+        text-align: center !important;
+    }
+
+    /* list spacing */
+    .pros-list {
+        gap: 16px;
+    }
+
+    /* make CTA button always fit */
+    .pros-btn {
+        width: 100%;
+        min-width: 0;
+        font-size: 14px;
+        padding: 14px 14px;
+        text-align: center;
+        justify-content: center;
+    }
+}

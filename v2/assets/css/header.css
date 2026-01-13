@@ -1,0 +1,300 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER BASE */
+.site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+.header-inner {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 14px 24px;
+}
+
+/* =========================
+   HEADER V2 (PRO LAYOUT)
+========================= */
+.header-v2 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-logo {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    height: 140px;
+    display: block;
+}
+
+
+.header-cta {
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-solid {
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Call Now */
+.btn-solid {
+    background: #18b75a;
+    color: #fff;
+    border: 2px solid #18b75a;
+    box-shadow: 0 10px 5px rgb(37, 176, 94);
+}
+
+.call-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: 1.1;
+}
+
+.call-wrap .btn-solid {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 900;
+
+    height: clamp(56px, 5vw, 98px);
+    padding: 0 clamp(14px, 1.8vw, 26px);
+    font-size: clamp(20px, 3.8vw, 60px);
+
+    width: 100%;
+    justify-content: center;
+    line-height: 3.05;
+    letter-spacing: 0.01em;
+}
+
+.call-sub {
+    margin-top: clamp(8px, 1.2vw, 18px);
+    font-size: clamp(14px, 1.8vw, 28px);
+    color: #0270e9;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 992px) {
+    .header-inner {
+        padding: 12px 14px;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo img {
+        height: 80px;
+    }
+
+    .header-cta {
+        flex: 0 0 auto;
+        gap: 0;
+        align-items: center;
+    }
+
+    .btn-outline {
+        display: none;
+    }
+
+    .call-wrap .btn-solid {
+        height: 56px;
+        font-size: 20px;
+        padding: 0 14px;
+    }
+
+    .call-sub {
+        display: block;
+        /* key */
+        margin-top: 16px;
+        font-size: 20px;
+        /* adjust if you want */
+        text-align: center;
+        /* key */
+    }
+}
+
+
+/* =========================
+   MOBILE "JUMP TO SECTION" DROPDOWN (FUNCTIONALITY)
+========================= */
+
+/* Hidden on desktop */
+.mobile-jump {
+    display: none;
+}
+
+/* Mobile only */
+@media (max-width: 992px) {
+    .mobile-jump {
+        display: block;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        background: #fff;
+    }
+
+    .mobile-jump__summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 12px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+    }
+
+    /* Remove the default marker (triangle) */
+    .mobile-jump__summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-jump__label {
+        font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0b1b2b;
+    }
+
+    .mobile-jump__chev {
+        display: inline-flex;
+        transition: transform 0.2s ease;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    /* Rotate chevron when open */
+    .mobile-jump[open] .mobile-jump__chev {
+        transform: rotate(180deg);
+    }
+
+    .mobile-jump__panel {
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .mobile-jump__link {
+        display: block;
+        padding: 14px 14px;
+        text-align: center;
+        text-decoration: none;
+        font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        color: #0b1b2b;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    }
+
+    /* Bottom button */
+    .mobile-jump__btn {
+        display: inline-flex;
+        margin: 14px auto 16px;
+        padding: 12px 18px;
+        text-decoration: none;
+        font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+
+        border-radius: 999px;
+        border: 2px solid currentColor;
+    }
+
+    /* Center the button container */
+    .mobile-jump__panel {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ✅ shrink the logo column so the button has space */
+    .header-logo {
+        flex: 0 0 86px;
+        /* was 180px on desktop */
+    }
+
+    .header-logo img {
+        height: 100px;
+    }
+
+    .header-cta {
+        flex: 1 1 auto;
+    }
+
+    .call-wrap .btn-solid {
+        box-shadow: 0 10px 5px rgb(37, 176, 94);
+        height: auto;
+        border-radius: 10px;
+        padding: 12px 10px;
+        font-size: 25px;
+        line-height: 1;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .call-sub {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+
+
+@media (max-width: 390px) {
+    .header-logo {
+        flex: 0 0 86px;
+    }
+
+    .header-logo img {
+        height: 100px;
+    }
+
+    .header-cta {
+        flex: 1 1 auto;
+    }
+
+    .call-wrap .btn-solid {
+        box-shadow: 0 10px 5px rgb(37, 176, 94);
+        height: auto;
+        border-radius: 10px;
+        padding: 12px 10px;
+        font-size: 20px;
+        line-height: 1;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .call-sub {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}

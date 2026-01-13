@@ -1,0 +1,233 @@
+.services {
+    position: relative;
+    padding: 86px 0 90px;
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 520px auto;
+}
+
+.services-inner {
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.services-head {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.services-kicker {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 28px;
+    color: #0a5be6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.services-title {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: #0b0b0b;
+    margin: 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.svc-card {
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 14px;
+    padding: 24px 22px 18px;
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: background 0.18s ease, border-color 0.18s ease,
+        box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.svc-top {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.svc-ico {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    background: #0a5be6;
+    display: grid;
+    place-items: center;
+    flex: 0 0 58px;
+
+    /* icon default = white */
+    color: #ffffff;
+
+    transition: background 0.18s ease, color 0.18s ease;
+}
+
+.svc-ico svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+/* for <img src="...svg"> icons (Card 1) */
+.svc-svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.svc-copy {
+    flex: 1;
+}
+
+.svc-title {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+
+    transition: color 0.18s ease;
+}
+
+.svc-desc {
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.35;
+    color: #1b1b1b;
+    margin: 0;
+    font-weight: 600;
+    transition: color 0.18s ease, opacity 0.18s ease;
+}
+
+/* Button */
+/* green button */
+.svc-btn {
+    height: 44px;
+    width: 100%;
+    /* ✅ add this */
+    border-radius: 8px;
+    background: #10b84a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    /* (optional but cleaner than inline-flex) */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.svc-btn:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.03);
+}
+
+/* =========================
+   HOVER: WHOLE CARD BLUE (like your 2nd image)
+========================= */
+
+.svc-card:hover {
+    background: #0a5be6;
+    border-color: #0a5be6;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+    transform: translateY(-2px);
+}
+
+/* title + desc become white */
+.svc-card:hover .svc-title,
+.svc-card:hover .svc-desc {
+    color: #ffffff;
+}
+
+.svc-card:hover .svc-desc {
+    opacity: 0.92;
+}
+
+/* icon box becomes white, icon becomes blue */
+.svc-card:hover .svc-ico {
+    background: #ffffff;
+    color: #0a5be6;
+    /* inline SVG with currentColor will turn blue */
+}
+
+/* If Card 1 uses <img src="...svg">, this makes it look blue on hover */
+.svc-card:hover .svc-svg {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(96%) saturate(2200%) hue-rotate(205deg) brightness(95%) contrast(95%);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .services {
+        padding: 62px 0 70px;
+        background-size: 360px auto;
+        background-position: right -20px top -10px;
+    }
+
+    .services-inner {
+        width: min(1200px, calc(100% - 28px));
+    }
+
+    .services-title {
+        font-size: 38px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .svc-card {
+        min-height: auto;
+        padding: 28px 16px 16px;
+    }
+    .svc-btn{
+        margin-top: 15px;
+    }
+
+    .svc-ico {
+        width: 52px;
+        height: 52px;
+        flex: 0 0 52px;
+    }
+
+    .svc-ico svg,
+    .svc-svg {
+        width: 28px;
+        height: 28px;
+    }
+}

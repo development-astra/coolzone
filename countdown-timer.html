@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown Timer — DD | HH | MM | SS</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #2b286b;
+            --bg: #f8f9fa;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        .countdown-wrap {
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .countdown {
+            display: flex;
+            gap: 1rem;
+            align-items: center
+        }
+
+        .countdown .unit {
+            min-width: 92px;
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            padding: 12px 16px;
+            box-shadow: 0 6px 18px rgba(43, 40, 107, 0.08);
+            border: 1px solid rgba(43, 40, 107, 0.06);
+        }
+
+        .countdown .value {
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 0.6px;
+            color: var(--accent);
+        }
+
+        .countdown .label {
+            font-size: 12px;
+            color: #6b6b85;
+            margin-top: 6px
+        }
+
+        .sep {
+            font-weight: 700;
+            color: #6b6b85;
+            font-size: 20px
+        }
+
+        /* responsive tweaks */
+        @media (max-width:420px) {
+            .countdown {
+                gap: .5rem
+            }
+
+            .countdown .unit {
+                min-width: 70px;
+                padding: 8px 10px;
+                border-radius: 8px
+            }
+
+            .countdown .value {
+                font-size: 20px
+            }
+
+            .sep {
+                font-size: 16px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="countdown-wrap">
+            <div class="countdown" role="timer" aria-live="polite">
+                <div class="unit">
+                    <div id="days" class="value">00</div>
+                    <div class="label">Days</div>
+                </div>
+
+                <div class="sep">|</div>
+
+                <div class="unit">
+                    <div id="hours" class="value">00</div>
+                    <div class="label">Hours</div>
+                </div>
+
+                <div class="sep">|</div>
+
+                <div class="unit">
+                    <div id="minutes" class="value">00</div>
+                    <div class="label">Minutes</div>
+                </div>
+
+                <div class="sep">|</div>
+
+                <div class="unit">
+                    <div id="seconds" class="value">00</div>
+                    <div class="label">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple countdown timer (vanilla JS)
+        (function () {
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minsEl = document.getElementById('minutes');
+            const secsEl = document.getElementById('seconds');
+
+            // default: 7 days from now
+            function defaultTarget() {
+                const d = new Date();
+                d.setDate(d.getDate() + 7);
+                d.setMinutes(0, 0, 0);
+                return d;
+            }
+
+            let target = defaultTarget();
+
+            function pad(n) {
+                return String(n).padStart(2, '0');
+            }
+
+            function update() {
+                const now = new Date();
+                const diff = target - now;
+                if (diff <= 0) {
+                    daysEl.textContent = '00';
+                    hoursEl.textContent = '00';
+                    minsEl.textContent = '00';
+                    secsEl.textContent = '00';
+                    clearInterval(interval);
+                    return;
+                }
+
+                const totalSeconds = Math.floor(diff / 1000);
+                const days = Math.floor(totalSeconds / (24 * 3600));
+                const hours = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+                const minutes = Math.floor((totalSeconds % 3600) / 60);
+                const seconds = totalSeconds % 60;
+
+                daysEl.textContent = pad(days);
+                hoursEl.textContent = pad(hours);
+                minsEl.textContent = pad(minutes);
+                secsEl.textContent = pad(seconds);
+            }
+
+            let interval = setInterval(update, 1000);
+            update();
+        })();
+    </script>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

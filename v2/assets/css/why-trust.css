@@ -1,0 +1,252 @@
+/* =========================
+   WHY TRUST US (NOW: OFFERS STYLE)
+   (DO NOT AFFECT OTHER SECTIONS)
+   - KEEP background image
+========================= */
+
+.why-trust {
+  position: relative;
+  padding: 230px 0 110px;
+  background-color: #eef4fb;
+
+  /* KEEP background image (your swoosh) */
+  background-image: url("../images/why-trust-bg.webp");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 2020px auto;
+}
+
+.why-inner {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-title {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0 0 18px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: 54px;
+  color: #1a1a1a;
+}
+
+/* Optional subtitle (still safe if you un-comment HTML) */
+.why-sub {
+  margin: 0 auto 46px;
+  max-width: 920px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(10, 20, 35, 0.8);
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  align-items: stretch;
+  margin: 0 auto 44px;
+}
+
+.why-card {
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+
+  /* ✅ More padding so content fills the coupon better */
+  padding: 40px 28px 34px;
+
+  border: 2px dashed rgba(42, 108, 255, 0.55);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+  overflow: hidden;
+
+  /* ✅ Fill height consistently even without expiration footer */
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* center content vertically */
+  gap: 12px;
+}
+
+.why-corner {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.why-corner svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ✅ Bigger main value (fills the coupon more) */
+.why-big {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 1;
+  color: #0a5be6;
+  margin: 0;
+
+  word-break: keep-all;
+  white-space: nowrap;
+}
+
+/* Card 3 (0%) can wrap safely if needed */
+.why-card:nth-child(3) .why-big {
+  white-space: normal;
+  line-height: 0.95;
+}
+
+/* ✅ Bigger headline text */
+.why-mid {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  color: #0c2a4f;
+  margin: 0;
+}
+
+/* ✅ Slightly larger supporting line */
+.why-small {
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(12, 42, 79, 0.70);
+  margin: 0;
+}
+
+/* ✅ Since expiration is removed, divider is optional.
+   Keep it but make it tighter. */
+.why-card .why-divider {
+  height: 1px;
+  background: rgba(12, 42, 79, 0.10);
+  width: 88%;
+  margin: 18px auto 0;
+}
+
+/* If you ever re-enable the expiration footer */
+.why-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: rgba(12, 42, 79, 0.75);
+  padding: 0 2px;
+}
+
+.why-foot strong {
+  color: #0c2a4f;
+  font-weight: 800;
+}
+
+.why-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: #10b84a;
+  color: #fff;
+  text-decoration: none;
+
+  height: 54px;
+  padding: 0 34px;
+  border-radius: 10px;
+
+  font-weight: 900;
+  font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* Tablet */
+@media (max-width: 980px) {
+  .why-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-card {
+    min-height: 270px;
+    padding: 38px 24px 30px;
+  }
+
+  .why-big {
+    font-size: 68px;
+  }
+
+  .why-mid {
+    font-size: 24px;
+  }
+
+  .why-small {
+    font-size: 17px;
+  }
+}
+
+@media (max-height: 820px) {
+  .why-trust {
+    padding: 100px 0 110px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .why-trust {
+    padding-top: 24px !important;
+    padding-bottom: 70px !important;
+    background-position: center bottom;
+    background-size: 820px auto;
+  }
+
+  .why-inner {
+    width: min(340px, calc(100% - 28px));
+  }
+
+  .why-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .why-sub {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .why-card {
+    min-height: 0;
+    padding: 32px 22px 26px;
+  }
+
+  .why-big {
+    font-size: 60px;
+    white-space: normal;
+  }
+
+  .why-mid {
+    font-size: 20px;
+  }
+
+  .why-small {
+    font-size: 16px;
+  }
+
+  .why-card .why-divider {
+    width: 92%;
+    margin-top: 16px;
+  }
+}

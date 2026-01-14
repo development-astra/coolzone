@@ -1,60 +1,78 @@
 (async function () {
+    const DEFAULT_LOCATION_NAME = "United States";
 
-    // 🔹 Default fallback location
-    const DEFAULT_LOCATION = { Name: "United States" };
+    function setLocationName(name) {
+        const finalName = (name || DEFAULT_LOCATION_NAME).toUpperCase();
 
-    // 1️⃣ Fetch CSV file
-    async function fetchLocationsCSV(url) {
-        try {
-            const res = await fetch(url);
-            const text = await res.text();
-            const lines = text.trim().split("\n");
-            const headers = lines[0].split(",").map(h => h.trim());
-            const locations = [];
-
-            for (let i = 1; i < lines.length; i++) {
-                const cols = lines[i].split(",").map(c => c.trim());
-                const obj = {};
-                headers.forEach((h, idx) => obj[h] = cols[idx]);
-                locations.push(obj);
-            }
-            return locations;
-        } catch (err) {
-            console.error("Error fetching locations CSV:", err);
-            return [];
-        }
-    }
-
-    // 2️⃣ Load CSV
-    const csvUrl = "/locations.csv";
-    const locations = await fetchLocationsCSV(csvUrl);
-
-    // 3️⃣ Get ?location parameter (if any)
-    const params = new URLSearchParams(window.location.search);
-    let locationId = params.get("location");
-
-    // 4️⃣ Determine location name
-    let locationName = DEFAULT_LOCATION.Name;
-
-    if (locationId) {
-        // Clean ID from quotes/parentheses
-        locationId = locationId.replace(/[()"']/g, "").trim();
-
-        // Find match in CSV
-        const match = locations.find(loc => {
-            const cleanId = loc["Criteria ID"].replace(/^"|"$/g, "").trim();
-            return cleanId === locationId;
+        // Header badge
+        document.querySelectorAll("#location").forEach((span) => {
+            span.textContent = finalName;
         });
 
-        if (match) {
-            locationName = match.Name.replace(/^"|"$/g, "").trim();
+        // Hero pill (if present)
+        document.querySelectorAll("#heroLocation").forEach((span) => {
+            span.textContent = finalName;
+        });
+    }
+
+    // 1) If URL has ?location=xxxx, use locations.csv
+    const params = new URLSearchParams(window.location.search);
+    const locationId = params.get("location");
+
+    if (locationId) {
+        try {
+            const res = await fetch("locations.csv", { cache: "no-store" });
+            if (!res.ok) throw new Error(`Failed to load locations.csv (${res.status})`);
+
+            const csv = await res.text();
+            const lines = csv.split(/\r?\n/).filter(Boolean);
+            if (lines.length < 2) throw new Error("locations.csv is empty or invalid");
+
+            const headers = lines[0].split(",").map((h) => h.trim());
+
+            let foundName = null;
+
+            for (let i = 1; i < lines.length; i++) {
+                const cols = lines[i].split(",").map((c) => c.trim());
+                const row = {};
+                headers.forEach((h, idx) => (row[h] = cols[idx] || ""));
+
+                // Common column names people use
+                const rowId = row.location || row.location_id || row.locationId || row.id || "";
+
+                if (String(rowId) === String(locationId)) {
+                    foundName =
+                        row.city ||
+                        row.city_name ||
+                        row.name ||
+                        row.location_name ||
+                        row.region ||
+                        row.state ||
+                        row.country ||
+                        null;
+                    break;
+                }
+            }
+
+            setLocationName(foundName || DEFAULT_LOCATION_NAME);
+            return; // stop here; we already set it from CSV
+        } catch (e) {
+            console.error("CSV location lookup failed:", e);
+            setLocationName(DEFAULT_LOCATION_NAME);
+            return;
         }
     }
 
-    // 5️⃣ Update all <span id="location"> elements
-    const locationSpans = document.querySelectorAll("#location");
-    locationSpans.forEach(span => {
-        span.textContent = locationName.toUpperCase();
-    });
+    // 2) No ?location= → use IP geolocation (CORS-friendly)
+    try {
+        const res = await fetch("https://ipwho.is/", { cache: "no-store" });
+        if (!res.ok) throw new Error(`ipwho failed (${res.status})`);
+        const data = await res.json();
 
+        const name = data.city || data.region || data.country || DEFAULT_LOCATION_NAME;
+        setLocationName(name);
+    } catch (e) {
+        console.error("IP geolocation failed:", e);
+        setLocationName(DEFAULT_LOCATION_NAME);
+    }
 })();

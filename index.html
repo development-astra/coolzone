@@ -1,907 +1,1117 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Green Air Innovation</title>
+    <meta
+      name="description"
+      content="Green Air Innovations specializes in HVAC services, including AC repair, heating installation, maintenance, and energy-efficient systems."
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cool Zone</title>
-  <meta name="description"
-    content="Green Air Innovations specializes in HVAC services, including AC repair, heating installation, maintenance, and energy-efficient systems." />
+    <link href="assets/images/favicon.webp" rel="icon" />
+    <link
+      href="assets/images/apple-touch-icon.webp"
+      rel="apple-touch-icon"
+    />
 
-  <link href="v2/assets/images/favicon.webp" rel="icon" />
-  <link href="v2/assets/images/apple-touch-icon.webp" rel="apple-touch-icon" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/why-trust.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/services.css" />
+    <link rel="stylesheet" href="assets/css/pros.css" />
+    <link rel="stylesheet" href="assets/css/financing-cta.css" />
+    <link rel="stylesheet" href="assets/css/service-guarantee.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css" />
+    <link rel="stylesheet" href="assets/css/service-areas.css" />
+    <link rel="stylesheet" href="assets/css/call-cta.css" />
+    <!-- <link rel="stylesheet" href="assets/css/legal-footer.css" /> -->
+    <link rel="stylesheet" href="assets/css/recaptcha.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="v2/assets/css/variables.css" />
-  <link rel="stylesheet" href="v2/assets/css/why-trust.css" />
-  <link rel="stylesheet" href="v2/assets/css/header.css" />
-  <link rel="stylesheet" href="v2/assets/css/hero.css" />
-  <link rel="stylesheet" href="v2/assets/css/services.css" />
-  <link rel="stylesheet" href="v2/assets/css/pros.css" />
-  <link rel="stylesheet" href="v2/assets/css/financing-cta.css" />
-  <link rel="stylesheet" href="v2/assets/css/service-guarantee.css" />
-  <link rel="stylesheet" href="v2/assets/css/reviews.css" />
-  <link rel="stylesheet" href="v2/assets/css/service-areas.css" />
-  <link rel="stylesheet" href="v2/assets/css/call-cta.css" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="v2/assets/css/legal-footer.css" /> -->
-  <link rel="stylesheet" href="v2/assets/css/recaptcha.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
-  <link rel="stylesheet" href="v1/assets/css/footer.css" />
+    <!-- Google reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+      .disabled-link {
+        pointer-events: none; /* disables click */
+        cursor: not-allowed;
+        opacity: 0.5; /* optional visual cue */
+        text-decoration: none;
+      }
+    </style>
+  </head>
 
-  <!-- Google reCAPTCHA v2 -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <style>
-    .disabled-link {
-      pointer-events: none;
-      /* disables click */
-      cursor: not-allowed;
-      opacity: 0.5;
-      /* optional visual cue */
-      text-decoration: none;
-    }
-  </style>
-</head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5M4GJRS6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-inner header-v2">
+        <!-- LEFT: LOGO -->
+        <div class="header-logo">
+          <img src="assets/images/logo.svg" alt="Green Air" />
+        </div>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner header-v2">
-      <!-- LEFT: LOGO -->
-      <div class="header-logo">
-        <img src="v2/assets/images/logo.svg" alt="Green Air" />
-      </div>
-
-      <!-- CENTER: NAV (DESKTOP) -->
-      <!-- <nav class="header-nav">
-          <a
-            style="color: white"
-            href="#deals"
-            class="disabled-link"
-            aria-disabled="true"
-            >Deals</a
-          >
-
-          <a
-            style="color: white"
-            href="#services"
-            class="disabled-link"
-            aria-disabled="true"
-            >Services</a
-          >
-          <a
-            style="color: white"
-            href="#guarantee"
-            class="disabled-link"
-            aria-disabled="true"
-            >Guarantee</a
-          >
-          <a
-            style="color: white"
-            href="#service-area"
-            class="disabled-link"
-            aria-disabled="true"
-            >Service Area</a
-          >
-        </nav> -->
-
-      <!-- RIGHT: CTA -->
-      <div class="header-cta">
-        <!-- <a class="btn-outline" href="tel:+17869101693">Request service</a> -->
-
-        <div class="call-wrap">
-          <a class="btn-solid" href="tel:+17869101693">
-            CALL FOR $1000 OFF NEW AC UNIT
-          </a>
-          <span class="call-sub">Call now for 24/7 Service</span>
+        <!-- RIGHT: CTA -->
+        <div class="header-cta">
+          <div class="call-wrap">
+            <a class="btn-solid" href="tel:+17869101693">
+              CALL FOR $1000 OFF NEW AC UNIT
+            </a>
+            <span class="call-sub">Call now for 24/7 Service</span>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
 
-    <!-- MOBILE: Jump to section dropdown -->
-    <!-- <details class="mobile-jump" id="mobileJump">
-        <summary class="mobile-jump__summary">
-          <span class="mobile-jump__label">Jump to section</span>
-          <span class="mobile-jump__chev" aria-hidden="true">▾</span>
-        </summary>
+    <!-- HERO + FORM -->
+    <main>
+      <section class="hero">
+        <div class="hero-grid">
+          <!-- LEFT (blue overlay city) -->
+          <div class="hero-left">
+            <div class="hero-left-inner">
+              <!-- Mobile-only location pill inside hero -->
+              <div class="hero-loc">
+                <span class="hero-loc-pill">
+                  <img
+                    class="hero-loc-icon"
+                    src="assets/images/location-pin.svg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <span class="hero-loc-text" id="heroLocation">MIAMI</span>
+                </span>
+              </div>
 
-        <nav class="mobile-jump__panel" aria-label="Jump to section">
-          <a class="mobile-jump__link" href="#deals">Deals</a>
-          <a class="mobile-jump__link" href="#services">Services</a>
-          <a class="mobile-jump__link" href="#financing">Financing</a>
-          <a class="mobile-jump__link" href="#guarantee">Guarantee</a>
-          <a class="mobile-jump__link" href="#service-area">Service Area</a>
+              <div class="hero-copy">
+                <div class="hero-kicker">AC NOT WORKING?</div>
 
-          <a class="mobile-jump__btn" href="tel:+17869101693">Request Service</a>
-        </nav>
-      </details> -->
-  </header>
+                <h1 class="hero-title">
+                  Affordable AC Repair and<br />
+                  Installation Service
+                </h1>
 
-  <main>
-    <section class="hero">
-      <div class="hero-grid">
-        <!-- LEFT (blue overlay city) -->
-        <div class="hero-left">
-          <div class="hero-left-inner">
-            <!-- Mobile-only location pill inside hero -->
-            <div class="hero-loc">
-              <span class="hero-loc-pill">
-                <img class="hero-loc-icon" src="v2/assets/images/location-pin.svg" alt="" aria-hidden="true" />
-                <span class="hero-loc-text" id="heroLocation">MIAMI</span>
-              </span>
-            </div>
-
-            <div class="hero-copy">
-              <div class="hero-kicker">Stop Sweating</div>
-
-              <h1 class="hero-title">
-                Same-Day HVAC Repair and Installation
-              </h1>
-
-              <ul class="hero-points" aria-label="Key service highlights">
-                <li class="hero-point">
-                  <img src="v2/assets/images/hero-icon/hero-icon-1.svg" alt="" aria-hidden="true" />
-                  <span>Emergency Service</span>
-                </li>
-                <li class="hero-point">
-                  <img src="v2/assets/images/hero-icon/7.svg" alt="" aria-hidden="true" />
-                  <span>20+ Years in Business</span>
-                </li>
-                <!-- <li class="hero-point">
+                <ul class="hero-points" aria-label="Key service highlights">
+                  <li class="hero-point">
                     <img
-                      src="v2/assets/images/hero-icon/hero-icon-3.svg"
+                      src="assets/images/hero-icon/hero-icon-1.svg"
                       alt=""
                       aria-hidden="true"
                     />
-                    <span>Available 7 Days A Week</span>
-                  </li> -->
-                <li class="hero-point">
-                  <img src="v2/assets/images/hero-icon/6.svg" alt="" aria-hidden="true" />
-                  <span>Residential and Commercial</span>
-                </li>
-              </ul>
+                    <span>Emergency Service</span>
+                  </li>
+                  <li class="hero-point">
+                    <img
+                      src="assets/images/hero-icon/7.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>20+ Years in Business</span>
+                  </li>
+                  <li class="hero-point">
+                    <img
+                      src="assets/images/hero-icon/6.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <span>Residential and Commercial</span>
+                  </li>
+                </ul>
 
-              <a class="hero-call" href="tel:+17869101693">
-                <span class="hero-call-top">24/7 Same Day Service</span>
-                <span class="hero-call-main">CALL (786) 910-1693</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT (family image) -->
-        <div class="hero-right" aria-hidden="true"></div>
-      </div>
-
-      <!-- FLOATING FORM CARD -->
-      <div class="hero-form-wrap">
-        <div class="hero-form-card">
-          <div class="hero-form-head">
-            <div class="hero-form-title">REQUEST SERVICE</div>
-            <div class="hero-form-sub">WITH A FREE ESTIMATE</div>
-          </div>
-
-          <form class="hero-form" id="contactFormHero" method="POST">
-            <div class="hero-fields">
-              <div class="hero-steps" data-step="1">
-                <!-- STEP 1 -->
-                <div class="hero-step is-active" data-step="1">
-                  <div class="hero-fields hero-fields--step">
-                    <div class="field field-name">
-                      <label>NAME</label>
-                      <input type="text" name="full_name" required />
-                    </div>
-
-                    <div class="field field-address">
-                      <label>COMPLETE ADDRESS</label>
-                      <input type="text" name="address" required />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- STEP 2 -->
-                <div class="hero-step" data-step="2">
-                  <div class="hero-fields hero-fields--step">
-                    <div class="field field-phone">
-                      <label>PHONE NUMBER</label>
-                      <input type="tel" name="phone" required />
-                    </div>
-
-                    <div class="field service-email">
-                      <label>EMAIL ADDRESS</label>
-                      <input type="email" name="email" required />
-                    </div>
-                  </div>
-                </div>
-
-                <!-- STEP 3 -->
-                <div class="hero-step" data-step="3">
-                  <div class="hero-fields hero-fields--step">
-                    <div class="field service-field">
-                      <label>I NEED HELP WITH</label>
-                      <div class="form-floating">
-                        <select class="form-select" name="service" required>
-                          <option value="" disabled selected>
-                            Select a service
-                          </option>
-                          <option value="AC Repair">AC Repair</option>
-                          <option value="AC Installation">
-                            AC Installation
-                          </option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="hero-recaptcha">
-                      <div class="g-recaptcha" data-sitekey="6LfRsw8sAAAAABdUp0Ik49xYFOW5xkDWasTk-XDJ"></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Controls -->
-                <div class="hero-step-controls">
-                  <button class="hero-step-btn" type="button" id="heroNextBtn">
-                    Step <span id="heroStepNum">1</span> to 3
-                  </button>
-
-                  <button class="hero-step-btn" type="submit" id="heroSubmitBtn">
-                    Get Help Now <span class="arrow">➤</span>
-                  </button>
-                </div>
+                <a class="hero-call" href="tel:+17869101693">
+                  <span class="hero-call-top">24/7 Same Day Service</span>
+                  <span class="hero-call-main">CALL (786) 910-1693</span>
+                </a>
               </div>
             </div>
-            <div class="hero-form-note">
-              All of your personal information is stored in a safe location.
-            </div>
-          </form>
-        </div>
-      </div>
-    </section><!-- HERO + FORM -->
+          </div>
 
-    <!-- WHY TRUST US | why-trust.css-->
-    <section class="why-trust" id="deals">
-      <div class="why-inner">
-        <h2 class="why-title">Limited Time Offers in Miami</h2>
-        <!-- <p class="why-sub">
+          <!-- RIGHT (family image) -->
+          <div class="hero-right" aria-hidden="true"></div>
+        </div>
+
+        <!-- FLOATING FORM CARD -->
+        <div class="hero-form-wrap">
+          <div class="hero-form-card">
+            <div class="hero-form-head">
+              <div class="hero-form-title">REQUEST SERVICE</div>
+              <div class="hero-form-sub">WITH A FREE ESTIMATE</div>
+            </div>
+
+            <form class="hero-form" id="contactFormHero" method="POST">
+              <div class="hero-fields">
+                <div class="hero-steps" data-step="1">
+                  <!-- STEP 1 -->
+                  <div class="hero-step is-active" data-step="1">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field field-name">
+                        <label>NAME</label>
+                        <input type="text" name="full_name" required />
+                      </div>
+
+                      <div class="field field-address">
+                        <label>COMPLETE ADDRESS</label>
+                        <input type="text" name="address" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 2 -->
+                  <div class="hero-step" data-step="2">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field field-phone">
+                        <label>PHONE NUMBER</label>
+                        <input type="tel" name="phone" required />
+                      </div>
+
+                      <div class="field service-email">
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" name="email" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3 -->
+                  <div class="hero-step" data-step="3">
+                    <div class="hero-fields hero-fields--step">
+                      <div class="field service-field">
+                        <label>I NEED HELP WITH</label>
+                        <div class="form-floating">
+                          <select class="form-select" name="service" required>
+                            <option value="" disabled selected>
+                              Select a service
+                            </option>
+                            <option value="AC Inspections">
+                              AC Inspections
+                            </option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="hero-recaptcha">
+                        <div
+                          class="g-recaptcha"
+                          data-sitekey="6LfRsw8sAAAAABdUp0Ik49xYFOW5xkDWasTk-XDJ"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <div class="hero-step-controls">
+                    <button
+                      class="hero-step-btn"
+                      type="button"
+                      id="heroNextBtn"
+                    >
+                      Step <span id="heroStepNum">1</span> to 3
+                    </button>
+
+                    <button
+                      class="hero-step-btn"
+                      type="submit"
+                      id="heroSubmitBtn"
+                    >
+                      Get Help Now <span class="arrow">➤</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-form-note">
+                All of your personal information is stored in a safe location.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY TRUST US | why-trust.css-->
+      <section class="why-trust" id="deals">
+        <div class="why-inner">
+          <h2 class="why-title">Limited Time Offers in Miami</h2>
+          <!-- <p class="why-sub">
             Simply share or mention these offers to your Green Air Innovations
             team member and save on your service!
           </p> -->
 
-        <div class="why-grid">
-          <!-- Card 1 -->
-          <article class="why-card">
-            <span class="why-corner" aria-hidden="true">
-              <!-- small tag icon -->
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z" stroke="currentColor" stroke-width="1.8"
-                  stroke-linejoin="round" />
-                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </span>
+          <div class="why-grid">
+            <!-- Card 1 -->
+            <article class="why-card">
+              <span class="why-corner" aria-hidden="true">
+                <!-- small tag icon -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
 
-            <div class="why-big">$1000</div>
-            <div class="why-mid">Off New AC Units</div>
-            <div class="why-small">Schedule Today!</div>
+              <div class="why-big">$1000</div>
+              <div class="why-mid">Off New AC Units</div>
+              <div class="why-small">Schedule Today!</div>
 
-            <!-- <div class="why-divider"></div> -->
+              <!-- <div class="why-divider"></div> -->
 
-            <!-- <div class="why-foot">
+              <!-- <div class="why-foot">
                 <span>Expires in 22 days</span>
                 <strong>01/31/2026</strong>
               </div> -->
-          </article>
+            </article>
 
-          <!-- Card 2 -->
-          <article class="why-card">
-            <span class="why-corner" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z" stroke="currentColor" stroke-width="1.8"
-                  stroke-linejoin="round" />
-                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </span>
+            <!-- Card 2 -->
+            <article class="why-card">
+              <span class="why-corner" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
 
-            <div class="why-big">$1500</div>
-            <div class="why-mid">Off Duct Cleaning</div>
-            <div class="why-small">Book Now!</div>
+              <div class="why-big">$1500</div>
+              <div class="why-mid">Off Duct Cleaning</div>
+              <div class="why-small">Book Now!</div>
 
-            <!-- <div class="why-divider"></div> -->
+              <!-- <div class="why-divider"></div> -->
 
-            <!-- <div class="why-foot">
+              <!-- <div class="why-foot">
                 <span>Expires</span>
                 <strong>01/31/2026</strong>
               </div> -->
-          </article>
+            </article>
 
-          <!-- Card 3 -->
-          <article class="why-card">
-            <span class="why-corner" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none">
-                <path d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z" stroke="currentColor" stroke-width="1.8"
-                  stroke-linejoin="round" />
-                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.8" />
-              </svg>
-            </span>
+            <!-- Card 3 -->
+            <article class="why-card">
+              <span class="why-corner" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M20 13L13 20a2 2 0 0 1-2.83 0L4 13V4h9l7 7z"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="8.5"
+                    r="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
 
-            <div class="why-big">0%</div>
-            <div class="why-mid">Flexible Finance Available</div>
-            <div class="why-small">Payments as Low as $30 per Month*</div>
+              <div class="why-big">0%</div>
+              <div class="why-mid">Flexible Finance Available</div>
+              <div class="why-small">Payments as Low as $30 per Month*</div>
 
-            <!-- <div class="why-divider"></div> -->
+              <!-- <div class="why-divider"></div> -->
 
-            <!-- <div class="why-foot">
+              <!-- <div class="why-foot">
                 <span>Expires</span>
                 <strong>01/31/2026</strong>
               </div> -->
-          </article>
-        </div>
-
-        <a class="why-btn" href="tel:+17869101693">BOOK A SERVICE CALL <span aria-hidden="true">➤</span></a>
-      </div>
-    </section>
-
-    <!-- OUR SERVICES | services.css-->
-    <section class="services" id="services">
-      <div class="services-inner">
-        <div class="services-head">
-          <div class="services-kicker">HOW CAN WE HELP?</div>
-          <h2 class="services-title text-uppercase">Our HVAC Services</h2>
-
-          <div class="services-checks" role="list" aria-label="Service highlights">
-            <div class="services-check" role="listitem">
-              <span class="services-check-ico" aria-hidden="true">✓</span>
-              <span>Emergency A/C services available</span>
-            </div>
-            <div class="services-check" role="listitem">
-              <span class="services-check-ico" aria-hidden="true">✓</span>
-              <span>Work is backed by our service guarantee</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="services-grid">
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.7183 13.5484L18.6104 12.6563L16.4769 10.5227C16.3714 10.4173 16.3121 10.2742 16.312 10.125V9.23291L14.062 6.98291L12.0449 9.00004L14.2949 11.25H15.187C15.3362 11.2501 15.4793 11.3094 15.5847 11.4148L17.7183 13.5484Z"
-                  fill="currentColor" />
-                <path
-                  d="M19.9447 11.8844L20.587 11.2387C20.6626 11.1632 20.7582 11.1107 20.8625 11.0875C20.9668 11.0643 21.0755 11.0713 21.176 11.1076C21.4193 11.1994 21.677 11.2475 21.937 11.2499C22.4909 11.2492 23.0251 11.0445 23.4377 10.6749C23.8502 10.3053 24.1122 9.79676 24.1735 9.2463L23.4597 9.96012C23.3543 10.0656 23.2112 10.1249 23.062 10.1249H21.3745C21.2254 10.1249 21.0823 10.0657 20.9768 9.96018C20.8713 9.85469 20.812 9.71161 20.812 9.56243V7.87493C20.8121 7.72576 20.8714 7.5827 20.9769 7.47724L21.6907 6.76343C21.1402 6.82482 20.6316 7.08678 20.2621 7.49932C19.8925 7.91186 19.6878 8.44606 19.687 8.99993C19.6898 9.25906 19.7379 9.5157 19.8294 9.75818C19.8663 9.85903 19.8736 9.96835 19.8503 10.0732C19.8271 10.1781 19.7744 10.2741 19.6983 10.3499L18.7949 11.2499L19.4294 11.8844C19.5088 11.8423 19.5972 11.8203 19.687 11.8203C19.7769 11.8203 19.8653 11.8423 19.9447 11.8844Z"
-                  fill="currentColor" />
-                <path
-                  d="M16.3761 22.3516C16.5223 22.3767 16.6527 22.4586 16.7389 22.5794L18 24.3445L19.2611 22.5794C19.3473 22.4586 19.4777 22.3767 19.624 22.3516C21.9842 21.9448 24.1059 20.6672 25.5695 18.7713C27.033 16.8755 27.7318 14.4994 27.5277 12.113C27.3236 9.7267 26.2314 7.50383 24.4672 5.88404C22.7029 4.26425 20.3951 3.36548 18 3.36548C15.605 3.36548 13.2971 4.26425 11.5328 5.88404C9.7686 7.50383 8.67642 9.7267 8.47231 12.113C8.2682 14.4994 8.96701 16.8755 10.4306 18.7713C11.8941 20.6672 14.0158 21.9448 16.3761 22.3516ZM10.8968 18.0153C10.708 17.5067 10.6456 16.9599 10.7149 16.4219C10.7841 15.8839 10.983 15.3708 11.2944 14.9267C11.6058 14.4825 12.0204 14.1206 12.5026 13.8721C12.9848 13.6236 13.5201 13.496 14.0625 13.5001C14.3292 13.5012 14.5946 13.5354 14.8528 13.6019L15.5171 12.9376L14.9546 12.3751H14.0625C13.9133 12.375 13.7703 12.3158 13.6648 12.2103L10.8523 9.39777C10.7469 9.29228 10.6876 9.14923 10.6876 9.00008C10.6876 8.85092 10.7469 8.70788 10.8523 8.60239L13.6648 5.78989C13.7703 5.68444 13.9134 5.6252 14.0625 5.6252C14.2117 5.6252 14.3547 5.68444 14.4602 5.78989L17.2727 8.60239C17.3782 8.70786 17.4375 8.85091 17.4375 9.00008V9.8922L18 10.4547L18.6643 9.79039C18.5978 9.53218 18.5636 9.26671 18.5625 9.00008C18.561 8.45856 18.6904 7.92471 18.9396 7.44396C19.1889 6.96321 19.5506 6.5498 19.994 6.23892C20.4374 5.92805 20.9493 5.72891 21.4862 5.65846C22.0231 5.58802 22.5691 5.64835 23.0777 5.83433C23.1671 5.86613 23.2469 5.92 23.3099 5.99095C23.3728 6.06189 23.4168 6.14759 23.4377 6.24009C23.4587 6.33259 23.4559 6.42888 23.4296 6.52001C23.4033 6.61114 23.3545 6.69415 23.2875 6.76133L21.9375 8.10795V9.00008H22.8296L24.1763 7.65289C24.2433 7.58589 24.3261 7.53689 24.417 7.51044C24.508 7.48399 24.6042 7.48095 24.6967 7.5016C24.7891 7.52225 24.8749 7.56591 24.946 7.62855C25.017 7.69118 25.0712 7.77076 25.1033 7.85989C25.292 8.36843 25.3545 8.91521 25.2852 9.45321C25.2159 9.99121 25.017 10.5043 24.7056 10.9485C24.3942 11.3926 23.9796 11.7545 23.4974 12.003C23.0153 12.2515 22.4799 12.3792 21.9375 12.3751C21.6709 12.374 21.4054 12.3398 21.1472 12.2733L20.7641 12.6563L25.1477 17.0399C25.2532 17.1454 25.3124 17.2884 25.3124 17.4376C25.3124 17.5867 25.2532 17.7298 25.1477 17.8353L22.8977 20.0853C22.7922 20.1907 22.6492 20.25 22.5 20.25C22.3509 20.25 22.2078 20.1907 22.1023 20.0853L17.7188 15.7017L17.3357 16.0848C17.4022 16.343 17.4364 16.6084 17.4375 16.8751C17.4366 17.7699 17.0808 18.6278 16.448 19.2606C15.8153 19.8933 14.9574 20.2492 14.0625 20.2501C13.6734 20.2478 13.2876 20.1771 12.9229 20.0414C12.8336 20.0094 12.7539 19.9553 12.6911 19.8842C12.6283 19.8131 12.5845 19.7273 12.5638 19.6347C12.5431 19.5422 12.5461 19.4459 12.5726 19.3548C12.5991 19.2637 12.6482 19.1808 12.7153 19.1138L14.0625 17.7672V16.8751H13.1704L11.8238 18.2251C11.7568 18.2921 11.674 18.3411 11.583 18.3675C11.492 18.394 11.3958 18.397 11.3034 18.3764C11.2109 18.3557 11.1252 18.3121 11.0541 18.2494C10.983 18.1868 10.9289 18.1072 10.8968 18.0181V18.0153Z"
-                  fill="currentColor" />
-                <path d="M19.687 13.1707L18.2324 14.6252L22.4995 18.8923L23.954 17.4377L19.687 13.1707Z"
-                  fill="currentColor" />
-                <path
-                  d="M12.9377 15.75H14.6252C14.7744 15.75 14.9174 15.8093 15.0229 15.9148C15.1284 16.0203 15.1877 16.1634 15.1877 16.3125V18C15.1876 18.1492 15.1284 18.2923 15.0229 18.3977L14.309 19.1121C14.8596 19.0506 15.3681 18.7885 15.7377 18.3759C16.1073 17.9632 16.312 17.429 16.3127 16.875C16.31 16.6159 16.2618 16.3593 16.1704 16.1168C16.134 16.0163 16.127 15.9076 16.1502 15.8033C16.1735 15.699 16.2259 15.6034 16.3014 15.5278L16.9472 14.8827C16.9051 14.8033 16.883 14.7149 16.883 14.625C16.883 14.5352 16.9051 14.4468 16.9472 14.3674L16.3127 13.7329L15.4127 14.6363C15.3371 14.7118 15.2416 14.7642 15.1373 14.7875C15.033 14.8107 14.9242 14.8037 14.8237 14.7673C14.5804 14.6756 14.3227 14.6274 14.0627 14.625C13.5088 14.6258 12.9746 14.8305 12.5621 15.2001C12.1495 15.5696 11.8876 16.0782 11.8262 16.6287L12.54 15.9148C12.6454 15.8094 12.7885 15.7501 12.9377 15.75Z"
-                  fill="currentColor" />
-                <path
-                  d="M29.25 28.125H6.75C6.60082 28.125 6.45774 28.1843 6.35225 28.2898C6.24676 28.3952 6.1875 28.5383 6.1875 28.6875V29.25H29.8125V28.6875C29.8125 28.5383 29.7532 28.3952 29.6477 28.2898C29.5423 28.1843 29.3992 28.125 29.25 28.125Z"
-                  fill="currentColor" />
-                <path
-                  d="M32.625 19.125H26.7148C25.1272 21.3619 22.7377 22.8999 20.0441 23.4186L18.4579 25.6393C18.4058 25.7122 18.3371 25.7717 18.2575 25.8127C18.1779 25.8537 18.0896 25.8751 18 25.8751C17.9104 25.8751 17.8221 25.8537 17.7425 25.8127C17.6629 25.7717 17.5942 25.7122 17.5421 25.6393L15.9559 23.4186C13.2623 22.8999 10.8728 21.3619 9.28519 19.125H3.375C2.92745 19.125 2.49822 19.3028 2.18176 19.6193C1.86529 19.9357 1.6875 20.3649 1.6875 20.8125V29.8125C1.6875 30.2601 1.86529 30.6893 2.18176 31.0057C2.49822 31.3222 2.92745 31.5 3.375 31.5H5.0625V28.6875C5.0625 28.2399 5.24029 27.8107 5.55676 27.4943C5.87322 27.1778 6.30245 27 6.75 27H29.25C29.6976 27 30.1268 27.1778 30.4432 27.4943C30.7597 27.8107 30.9375 28.2399 30.9375 28.6875V31.5H32.625C33.0726 31.5 33.5018 31.3222 33.8182 31.0057C34.1347 30.6893 34.3125 30.2601 34.3125 29.8125V20.8125C34.3125 20.3649 34.1347 19.9357 33.8182 19.6193C33.5018 19.3028 33.0726 19.125 32.625 19.125ZM31.5 23.0625C31.2775 23.0625 31.06 22.9965 30.875 22.8729C30.69 22.7493 30.5458 22.5736 30.4606 22.368C30.3755 22.1625 30.3532 21.9363 30.3966 21.718C30.44 21.4998 30.5472 21.2993 30.7045 21.142C30.8618 20.9847 31.0623 20.8775 31.2805 20.8341C31.4988 20.7907 31.725 20.813 31.9305 20.8981C32.1361 20.9833 32.3118 21.1275 32.4354 21.3125C32.559 21.4975 32.625 21.715 32.625 21.9375C32.625 22.2359 32.5065 22.522 32.2955 22.733C32.0845 22.944 31.7984 23.0625 31.5 23.0625Z"
-                  fill="currentColor" />
-                <path d="M29.8125 30.375H6.1875V31.5H29.8125V30.375Z" fill="currentColor" />
-              </svg>
-            </div>
-            <h3 class="svc-title">Residential HVAC Repair & Installation</h3>
-            <p class="svc-points fs-5">We repair, size, install, and optimize systems for quiet operation, balanced
-              airflow, and long-term energy savings.</p>
-            <ul class="svc-points d-none">
-              <li class="text-center">
-                We repair, size, install, and optimize systems for quiet operation, balanced airflow, and long-term
-                energy savings.
-              </li>
-            </ul>
-          </article>
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_69_189)">
-                  <path
-                    d="M15.8906 36C15.2598 36 14.7656 35.5058 14.7656 34.875V32.1328C14.7656 31.6957 14.4868 31.3245 14.0553 31.1873C13.2088 30.9454 12.3311 30.5816 11.4486 30.1063C11.308 30.0324 11.1487 29.9931 10.9884 29.9931C10.7239 29.9931 10.4749 30.0965 10.2872 30.2841L8.34666 32.2247C8.13952 32.4319 7.85967 32.5459 7.55859 32.5459C7.25759 32.5459 6.97767 32.4319 6.7706 32.2247L3.77529 29.2294C3.56815 29.0223 3.4541 28.7424 3.4541 28.4414C3.4541 28.1403 3.56815 27.8605 3.77529 27.6533L5.71591 25.7128C6.02508 25.4035 6.0963 24.9365 5.89317 24.5507C5.41842 23.6689 5.05455 22.7913 4.81212 21.9428C4.67128 21.5202 4.2911 21.2344 3.86719 21.2344H1.125C0.494156 21.2344 0 20.7402 0 20.1094V15.8906C0 15.2598 0.494156 14.7656 1.125 14.7656H3.86719C4.30432 14.7656 4.6755 14.4868 4.81275 14.0553C5.05448 13.209 5.41835 12.3313 5.89352 11.4486C6.09637 11.0634 6.02515 10.5964 5.71598 10.2872L3.77536 8.34652C3.56822 8.13937 3.45417 7.85953 3.45417 7.55852C3.45417 7.25752 3.56822 6.97767 3.77536 6.7706L6.77067 3.77515C6.97774 3.56801 7.25766 3.45396 7.55866 3.45396C7.85974 3.45396 8.13959 3.56801 8.34673 3.77515L10.2873 5.71591C10.4749 5.90351 10.7239 6.0068 10.9884 6.0068C11.1487 6.0068 11.3081 5.96749 11.4493 5.89317C12.3312 5.41828 13.2088 5.05434 14.0574 4.81198C14.4798 4.67107 14.7656 4.29096 14.7656 3.86719V1.125C14.7656 0.494156 15.2598 0 15.8906 0H20.1094C20.7402 0 21.2344 0.494156 21.2344 1.125V3.86719C21.2344 4.30418 21.5132 4.67536 21.9447 4.81261C22.7912 5.05441 23.6689 5.41828 24.5514 5.89352C24.692 5.96756 24.8514 6.00687 25.0117 6.00687C25.2762 6.00687 25.5252 5.90351 25.7128 5.71598L27.6533 3.77522C27.8605 3.56808 28.1403 3.45403 28.4414 3.45403C28.7424 3.45403 29.0223 3.56808 29.2294 3.77522L32.2247 6.77067C32.4319 6.97774 32.5459 7.25759 32.5459 7.55859C32.5459 7.8596 32.4319 8.13945 32.2247 8.34659L30.2841 10.2873C29.9749 10.5964 29.9037 11.0635 30.1068 11.4493C30.5817 12.3313 30.9455 13.209 31.1879 14.0573C31.3288 14.4798 31.709 14.7656 32.1328 14.7656H34.875C35.5058 14.7656 36 15.2598 36 15.8906V20.1094C36 20.7402 35.5058 21.2344 34.875 21.2344H32.1328C31.6957 21.2344 31.3245 21.5132 31.1873 21.9447C30.9454 22.7912 30.5816 23.6689 30.1065 24.5512C29.9036 24.9365 29.9749 25.4035 30.284 25.7128L32.2246 27.6533C32.4318 27.8605 32.5458 28.1403 32.5458 28.4414C32.5458 28.7424 32.4318 29.0223 32.2246 29.2294L29.2293 32.2247C29.0223 32.4319 28.7423 32.5459 28.4413 32.5459C28.1403 32.5459 27.8604 32.4319 27.6533 32.2247L25.7127 30.2841C25.5251 30.0965 25.2761 29.9931 25.0115 29.9931C24.8512 29.9931 24.6919 30.0324 24.5507 30.1067C23.6688 30.5816 22.7912 30.9454 21.9426 31.1879C21.5202 31.3288 21.2344 31.709 21.2344 32.1328V34.875C21.2344 35.5058 20.7402 36 20.1094 36H15.8906ZM18 8.57812C12.8048 8.57812 8.57812 12.8048 8.57812 18C8.57812 23.1952 12.8048 27.4219 18 27.4219C23.1952 27.4219 27.4219 23.1952 27.4219 18C27.4219 12.8048 23.1952 8.57812 18 8.57812Z"
-                    fill="currentColor" />
-                  <path
-                    d="M20.4184 15.145L16.9453 18.618L15.5816 17.2543C15.1697 16.8423 14.5022 16.8423 14.0902 17.2543C13.6783 17.6662 13.6783 18.3337 14.0902 18.7457L16.1996 20.855C16.6116 21.267 17.279 21.2671 17.691 20.855L21.9097 16.6363C22.3217 16.2243 22.3217 15.5569 21.9097 15.1449C21.4978 14.7329 20.8304 14.7329 20.4184 15.145Z"
-                    fill="currentColor" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_69_189">
-                    <rect width="36" height="36" fill="currentColor" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h3 class="svc-title">Commercial HVAC Repair & Installation</h3>
-            <p class="svc-points fs-5">Full-service commercial HVAC repair and installation, including rooftop unit HVAC
-              installation for offices, retail spaces, and multi-zone buildings.</p>
-            <ul class="svc-points d-none">
-              <li>
-                Upgrade or install central AC, ductless mini-splits, high-SEER
-                systems, thermostats and more.
-              </li>
-            </ul>
-          </article>
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_69_194)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M20.8042 3.60093L28.1828 16.381L35.5613 29.1609C36.1463 30.1741 36.1463 31.3856 35.5614 32.3989C34.9763 33.4122 33.9271 34.018 32.7572 34.018H3.24295C2.07299 34.018 1.02378 33.4122 0.438797 32.399C-0.146266 31.3857 -0.146266 30.1741 0.438797 29.1609L7.81731 16.381L15.1959 3.60093C15.7809 2.58767 16.8301 1.98193 18.0001 1.98193C19.1701 1.98193 20.2192 2.58767 20.8042 3.60093ZM18.0001 25.8321C18.817 25.8321 19.4793 26.4944 19.4793 27.3114C19.4793 28.1283 18.817 28.7905 18.0001 28.7905C17.1831 28.7905 16.5208 28.1283 16.5208 27.3114C16.5208 26.4944 17.1831 25.8321 18.0001 25.8321ZM18.0008 9.49499C18.9943 9.49499 19.8959 10.3132 19.8416 11.3358L19.1841 23.6954H17.0147L16.16 11.3358C16.0902 10.3258 16.9884 9.49499 18.0008 9.49499Z"
-                    fill="currentColor" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_69_194">
-                    <rect width="36" height="36" fill="currentColor" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h3 class="svc-title">Maintenance Plans</h3>
-            <p class="svc-points fs-5">Prevent breakdowns, extend equipment life, and keep efficiency high with routine
-              HVAC maintenance for homes and businesses.</p>
-            <ul class="svc-points d-none">
-              <li>
-                Preventative care to improve efficiency, extend lifespan, and
-                avoid costly breakdowns.
-              </li>
-            </ul>
-          </article>
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_1298_4333)">
-                  <path d="M8.55227 4.0166C7.44088 4.14024 6.38835 4.58015 5.51953 5.28412H8.5522L8.55227 4.0166Z"
-                    fill="currentColor" />
-                  <path d="M14.7409 11.8149H9.85938V13.1211H14.0898C14.3604 12.7144 14.5791 12.2756 14.7409 11.8149Z"
-                    fill="currentColor" />
-                  <path
-                    d="M8.55152 6.59033H4.32103C4.04982 6.99682 3.83039 7.43553 3.66797 7.89645H8.55145V6.59033H8.55152Z"
-                    fill="currentColor" />
-                  <path d="M9.85938 14.4268V15.6943C10.9708 15.5706 12.0233 15.1307 12.892 14.4268H9.85938Z"
-                    fill="currentColor" />
-                  <path d="M9.85938 4.0166V5.28412H12.892C12.0232 4.58015 10.9707 4.14024 9.85938 4.0166Z"
-                    fill="currentColor" />
-                  <path
-                    d="M8.55259 9.20264H3.3667C3.31527 9.63649 3.31527 10.0749 3.3667 10.5088H8.55252L8.55259 9.20264Z"
-                    fill="currentColor" />
-                  <path d="M8.55227 15.6943V14.4268H5.51953C6.38835 15.1307 7.44088 15.5706 8.55227 15.6943Z"
-                    fill="currentColor" />
-                  <path
-                    d="M3.32884 22.2634H5.941C6.30164 22.2634 6.59406 21.971 6.59406 21.6103V20.3042H2.67578V21.6103C2.67578 21.971 2.9682 22.2634 3.32884 22.2634Z"
-                    fill="currentColor" />
-                  <path d="M8.54952 13.1206V11.8145H3.66797C3.83039 12.2753 4.04982 12.7141 4.32103 13.1206H8.54952Z"
-                    fill="currentColor" />
-                  <path
-                    d="M22.1802 36.1571L28.5148 25.596C26.9835 25.2102 25.6006 24.3802 24.5397 23.2104L18.2051 33.7729C17.7791 34.4831 17.7645 35.3666 18.1666 36.0905C18.5686 36.8144 19.3265 37.2689 20.1545 37.2826C20.9824 37.2963 21.7549 36.8673 22.1808 36.1571H22.1802ZM19.969 35.2311C19.66 35.0453 19.56 34.6442 19.7457 34.3351L20.9212 32.3759C21.0413 32.1758 21.2591 32.0551 21.4924 32.0591C21.7258 32.0631 21.9392 32.1913 22.0524 32.3955C22.1656 32.5996 22.1613 32.8485 22.0411 33.0486L20.8657 35.0078C20.6799 35.3169 20.2788 35.4168 19.9697 35.2311H19.969V35.2311Z"
-                    fill="currentColor" />
-                  <path
-                    d="M0.714844 17.6921C0.714844 18.4135 1.29955 18.9982 2.02089 18.9982H22.5266C22.2366 17.1409 22.6063 15.2407 23.5715 13.6276V2.01901C23.5715 1.29766 22.9868 0.712891 22.2654 0.712891H2.02089C1.29955 0.712891 0.714844 1.29766 0.714844 2.01901V17.6921ZM20.3062 15.08C20.6669 15.08 20.9593 15.3723 20.9593 15.733C20.9593 16.0937 20.667 16.3861 20.3062 16.3861C19.9455 16.3861 19.6532 16.0937 19.6532 15.733C19.6532 15.3723 19.9456 15.08 20.3062 15.08ZM17.6941 15.08C18.0547 15.08 18.3471 15.3723 18.3471 15.733C18.3471 16.0937 18.0548 16.3861 17.6941 16.3861C17.3334 16.3861 17.041 16.0937 17.041 15.733C17.041 15.3723 17.3334 15.08 17.6941 15.08ZM9.20446 2.67207C13.1718 2.67207 16.388 5.88822 16.388 9.85557C16.388 13.8229 13.1718 17.0391 9.20446 17.0391C5.23711 17.0391 2.02089 13.8229 2.02089 9.85557C2.0256 5.89015 5.23904 2.67671 9.20446 2.67207Z"
-                    fill="currentColor" />
-                  <path
-                    d="M15.0837 9.8557C15.0831 9.63749 15.0702 9.41942 15.0452 9.20264H9.85938V10.5088H15.0452C15.0703 10.292 15.0831 10.0739 15.0837 9.8557Z"
-                    fill="currentColor" />
-                  <path
-                    d="M27.0258 23.5777C29.3411 24.9679 32.2612 24.8494 34.4563 23.2763C36.6514 21.7031 37.7018 18.9759 37.1291 16.3367C37.1004 16.2045 36.9942 16.103 36.8608 16.0804C36.7274 16.0578 36.5936 16.1187 36.5231 16.2341L33.8736 20.6513C33.7556 20.8482 33.5429 20.9687 33.3133 20.9687H28.9823C28.7409 20.9687 28.5191 20.8357 28.4057 20.6225L26.3675 16.8015C26.2596 16.5991 26.2658 16.355 26.3838 16.1582L29.0352 11.7384C29.1077 11.6234 29.1014 11.4756 29.0193 11.3672C28.9372 11.2588 28.7966 11.2126 28.6663 11.2513C26.0655 11.9858 24.1503 14.1962 23.7937 16.8751C23.4373 19.5541 24.7077 22.1886 27.0258 23.5777Z"
-                    fill="currentColor" />
-                  <path
-                    d="M18.3484 22.2634H20.9605C21.3212 22.2634 21.6136 21.971 21.6136 21.6103V20.3042H17.6953V21.6103C17.6953 21.971 17.9877 22.2634 18.3484 22.2634Z"
-                    fill="currentColor" />
-                  <path d="M14.0898 6.59033H9.85938V7.89645H14.7409C14.5791 7.43567 14.3604 6.9969 14.0898 6.59033Z"
-                    fill="currentColor" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_1298_4333">
-                    <rect width="36.57" height="36.57" fill="white" transform="translate(0.714844 0.712891)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h3 class="svc-title">Emergency HVAC Services (24/7)</h3>
-            <p class="svc-points fs-5">Get an immediate response for HVAC system failures. Fast diagnostics and reliable
-              emergency repairs.</p>
-            <ul class="svc-points d-none">
-              <li>Energy Efficient Airflow for lower energy bills.</li>
-            </ul>
-          </article>
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M32.918 12.9993L19.0524 2.59869C18.428 2.13182 17.573 2.13182 16.9486 2.59869L3.08298 12.9993C2.17173 13.6856 1.96923 14.9737 2.63298 15.8624C3.30236 16.7456 4.59611 16.9087 5.50736 16.2224L16.943 7.64994C17.5674 7.18307 18.4224 7.18307 19.0467 7.64994L30.4824 16.2224C31.3936 16.9087 32.6874 16.7512 33.3567 15.8624C34.0261 14.9793 33.8236 13.6912 32.9067 12.9993H32.918Z"
-                  fill="currentColor" />
-                <path
-                  d="M29.8123 17.1169L18.3767 8.55003C18.2361 8.44315 18.0954 8.42065 17.9998 8.42065C17.9042 8.42065 17.7636 8.44315 17.6229 8.55003L6.1873 17.1169C6.00168 17.2575 5.8048 17.3757 5.59668 17.4657L5.64168 31.5675C5.64168 32.76 6.60918 33.7275 7.80168 33.7332L28.3048 33.75C29.5029 33.75 30.4704 32.7825 30.4704 31.59L30.4311 17.4825C30.2117 17.3869 30.0092 17.2632 29.8123 17.1169ZM17.9998 29.6888C13.8711 29.6888 10.5186 26.3419 10.5186 22.2132C10.5186 18.0844 13.8654 14.7375 17.9998 14.7375C22.1342 14.7375 25.4754 18.0844 25.4754 22.2132C25.4754 26.3419 22.1286 29.6888 17.9998 29.6888Z"
-                  fill="currentColor" />
-                <path
-                  d="M21.9831 21.4707C21.9831 21.4707 22.0393 21.4763 22.0618 21.4763C22.3375 21.4763 22.5793 21.2738 22.6187 20.9926C22.6637 20.6832 22.45 20.402 22.1406 20.357L21.2743 20.2332L21.5668 19.412C21.6681 19.1195 21.5162 18.7988 21.2237 18.692C20.9312 18.5851 20.6106 18.7426 20.5037 19.0351L20.0481 20.3176L18.5575 21.2176V19.4738L19.4181 18.422C19.615 18.1801 19.5812 17.8257 19.3393 17.6288C19.0975 17.432 18.7431 17.4657 18.5462 17.7076L17.995 18.3826L17.4437 17.7076C17.2468 17.4657 16.8925 17.432 16.6506 17.6288C16.4087 17.8257 16.375 18.1801 16.5718 18.422L17.4325 19.4738V21.2176L15.9418 20.3176L15.4862 19.0351C15.3793 18.7426 15.0587 18.5907 14.7662 18.692C14.4737 18.7988 14.3218 19.1195 14.4231 19.412L14.7156 20.2332L13.8493 20.357C13.54 20.402 13.3262 20.6888 13.3712 20.9926C13.4106 21.2738 13.6525 21.4763 13.9281 21.4763C13.9562 21.4763 13.9843 21.4763 14.0068 21.4707L15.3512 21.2795L16.8981 22.2132L15.3512 23.147L14.0068 22.9557C13.7031 22.9107 13.4162 23.1245 13.3712 23.4338C13.3262 23.7432 13.54 24.0245 13.8493 24.0695L14.7156 24.1932L14.4231 25.0145C14.3162 25.307 14.4737 25.6276 14.7662 25.7345C14.8281 25.757 14.89 25.7682 14.9575 25.7682C15.1881 25.7682 15.4075 25.622 15.4862 25.397L15.9418 24.1145L17.4325 23.2145V24.9582L16.5718 26.0101C16.375 26.252 16.4087 26.6063 16.6506 26.8032C16.8925 27.0001 17.2468 26.9663 17.4437 26.7245L17.995 26.0495L18.5462 26.7245C18.6587 26.8595 18.8162 26.9326 18.9793 26.9326C19.1031 26.9326 19.2325 26.8932 19.3337 26.8032C19.5756 26.6063 19.6093 26.252 19.4125 26.0101L18.5518 24.9582V23.2145L20.0425 24.1145L20.4981 25.397C20.5825 25.6276 20.7962 25.7682 21.0268 25.7682C21.0887 25.7682 21.1506 25.757 21.2181 25.7345C21.5106 25.6276 21.6625 25.307 21.5612 25.0145L21.2687 24.1932L22.135 24.0695C22.4443 24.0245 22.6581 23.7376 22.6131 23.4338C22.5681 23.1245 22.2925 22.9107 21.9775 22.9557L20.6275 23.147L19.0806 22.2132L20.6275 21.2795L21.9775 21.4707H21.9831Z"
-                  fill="currentColor" />
-                <path
-                  d="M28.7207 4.30891C28.7207 3.74641 28.2651 3.28516 27.697 3.28516H25.1038C24.5413 3.28516 24.0801 3.74641 24.0801 4.30891V4.96703L28.7207 8.44328V4.30891Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-            <h3 class="svc-title">Indoor Air Quality Testing</h3>
-            <p class="svc-points fs-5">Identify airborne pollutants, allergens, and airflow issues to improve breathing
-              comfort, system efficiency, and overall indoor health.</p>
-            <ul class="svc-points d-none">
-              <li>Home or Apartment Residential HVAC services.</li>
-            </ul>
-          </article>
-          <article class="svc-item">
-            <div class="svc-icon" aria-hidden="true">
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M27.4296 20.9247C27.2313 21.6127 26.9574 22.2687 26.6176 22.883L27.3048 24.2317C27.5244 24.6627 27.4449 25.1644 27.1029 25.5064L25.5075 27.1019C25.1654 27.4439 24.6638 27.5233 24.2328 27.3038L22.884 26.6165C22.2697 26.9564 21.6137 27.2302 20.9258 27.4286L20.4584 28.8672C20.3089 29.3272 19.898 29.6258 19.4143 29.6258H17.158C16.6743 29.6258 16.2634 29.3273 16.1139 28.8672L15.6465 27.4286C14.9585 27.2303 14.3025 26.9564 13.6882 26.6166L12.3395 27.3038C11.9085 27.5234 11.4068 27.4439 11.0648 27.1019L9.46934 25.5064C9.12729 25.1644 9.04786 24.6627 9.26742 24.2317L9.95468 22.883C9.61484 22.2686 9.34099 21.6126 9.14264 20.9247L7.70406 20.4573C7.244 20.3078 6.94544 19.8969 6.94544 19.4132V17.1569C6.94544 16.6732 7.244 16.2622 7.70399 16.1127L9.14264 15.6453C9.34092 14.9573 9.61484 14.3014 9.95461 13.687L9.26742 12.3384C9.04779 11.9073 9.12729 11.4057 9.46934 11.0636L11.0647 9.46819C11.4068 9.12614 11.9085 9.04671 12.3394 9.26627L13.6882 9.95353C14.3025 9.61369 14.9585 9.33984 15.6464 9.14149L16.1138 7.70291C16.2633 7.24285 16.6742 6.94429 17.1579 6.94429H19.4142C19.8979 6.94429 20.3089 7.24278 20.4583 7.70291L20.9258 9.14171C21.6137 9.33998 22.2696 9.61383 22.8838 9.95353L24.2326 9.26627C24.6637 9.04664 25.1653 9.12614 25.5074 9.46819L27.1028 11.0636C27.4449 11.4056 27.5243 11.9072 27.3047 12.3383L26.6175 13.687C26.9573 14.3014 27.2312 14.9573 27.4295 15.6452L28.8682 16.1126C29.3282 16.2621 29.6268 16.6731 29.6268 17.1568V19.413C29.6268 19.8968 29.3283 20.3076 28.8682 20.4572L27.4295 20.9246L27.4296 20.9247ZM5.88349 9.67262L7.32343 11.1126L8.77037 4.97944L2.63733 6.42638L4.11313 7.90218C-0.935534 14.7758 -0.352557 24.4911 5.8637 30.7074C11.4575 36.3011 19.8846 37.3333 26.5249 33.8055L24.6846 31.9652C19.0922 34.5804 12.2274 33.5795 7.60949 28.9616C2.35984 23.712 1.78557 15.5593 5.88349 9.67262ZM27.8016 31.5907L33.9347 30.1437L32.4594 28.6684C37.5081 21.7949 36.9246 12.0792 30.7083 5.86283C25.1145 0.268982 16.6873 -0.763191 10.047 2.76467L11.8873 4.60496C17.4797 1.9897 24.3446 2.99059 28.9625 7.60848C34.2122 12.8581 34.7869 21.0112 30.6888 26.8979L29.2484 25.4575L27.8015 31.5906L27.8016 31.5907ZM20.4911 16.0802C19.2733 14.8624 17.299 14.8624 16.0812 16.0802C14.8635 17.2979 14.8635 19.2722 16.0812 20.49C17.299 21.7077 19.2733 21.7077 20.4911 20.49C21.7088 19.2722 21.7088 17.2979 20.4911 16.0802ZM22.7702 13.801C20.2937 11.3245 16.2786 11.3245 13.8021 13.801C11.3256 16.2775 11.3256 20.2926 13.8021 22.7691C16.2786 25.2456 20.2937 25.2456 22.7702 22.7691C25.2467 20.2926 25.2467 16.2775 22.7702 13.801Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-            <h3 class="svc-title">Ductwork Cleaning & Installation</h3>
-            <p class="svc-points fs-5">Professional duct cleaning and custom ductwork installation to improve airflow,
-              reduce dust buildup, and ensure your HVAC system performs at its best.</p>
-            <ul class="svc-points d-none">
-              <li>
-                Commercial or Industrial Buildings HVAC to support businesses.
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROS SECTION | pros.csss-->
-    <section class="pros" id="guarantee">
-      <div class="pros-inner">
-        <!-- LEFT: image card -->
-        <div class="pros-media" aria-hidden="true">
-          <div class="pros-photo">
-            <img src="v2/assets/images/pro-bg.webp" alt="" loading="lazy" decoding="async" />
-          </div>
-        </div>
-
-        <!-- RIGHT: content -->
-        <div class="pros-content">
-          <h2 class="pros-title">Pros of Using Cool Zone Engineering</h2>
-
-          <div class="pros-grid">
-            <article class="pros-card">
-              <h3>Lower Energy Bills:</h3>
-              <p>
-                Proper sizing and high-efficiency systems reduce wasted energy and monthly costs, saving you money.
-              </p>
-            </article>
-
-            <article class="pros-card">
-              <h3>Reliable Comfort:</h3>
-              <p>
-                No more hot spots or uneven airflow. Enjoy consistent temperatures room to room.
-              </p>
-            </article>
-
-            <article class="pros-card">
-              <h3>Faster Repairs, Less Downtime:</h3>
-              <p>
-                Our emergency-ready teams respond quickly to restore comfort in hours, not days.
-              </p>
-            </article>
-
-            <article class="pros-card">
-              <h3>Healthier Indoor Air:</h3>
-              <p>
-                Modern systems improve airflow and air quality for cleaner, fresher spaces.
-              </p>
-            </article>
-
-            <article class="pros-card">
-              <h3>Longer System Lifespan:</h3>
-              <p>
-                Professional installation and maintenance protect your HVAC investment.
-              </p>
             </article>
           </div>
 
-          <div class="pros-cta">
-            <a class="pros-btn" href="tel:+17869101693">
-              SCHEDULE A FREE CONSULTATION <span aria-hidden="true">➤</span>
-            </a>
+          <a class="why-btn" href="tel:+17869101693"
+            >BOOK A SERVICE CALL <span aria-hidden="true">➤</span></a
+          >
+        </div>
+      </section>
+
+      <!-- OUR SERVICES | services.css-->
+      <section class="services" id="services">
+        <div class="services-inner">
+          <div class="services-head">
+            <div class="services-kicker">HOW CAN WE HELP?</div>
+            <h2 class="services-title">OUR SERVICES</h2>
+
+            <div
+              class="services-checks"
+              role="list"
+              aria-label="Service highlights"
+            >
+              <div class="services-check" role="listitem">
+                <span class="services-check-ico" aria-hidden="true">✓</span>
+                <span>Emergency A/C services available</span>
+              </div>
+              <div class="services-check" role="listitem">
+                <span class="services-check-ico" aria-hidden="true">✓</span>
+                <span>Work is backed by our service guarantee</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.7183 13.5484L18.6104 12.6563L16.4769 10.5227C16.3714 10.4173 16.3121 10.2742 16.312 10.125V9.23291L14.062 6.98291L12.0449 9.00004L14.2949 11.25H15.187C15.3362 11.2501 15.4793 11.3094 15.5847 11.4148L17.7183 13.5484Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M19.9447 11.8844L20.587 11.2387C20.6626 11.1632 20.7582 11.1107 20.8625 11.0875C20.9668 11.0643 21.0755 11.0713 21.176 11.1076C21.4193 11.1994 21.677 11.2475 21.937 11.2499C22.4909 11.2492 23.0251 11.0445 23.4377 10.6749C23.8502 10.3053 24.1122 9.79676 24.1735 9.2463L23.4597 9.96012C23.3543 10.0656 23.2112 10.1249 23.062 10.1249H21.3745C21.2254 10.1249 21.0823 10.0657 20.9768 9.96018C20.8713 9.85469 20.812 9.71161 20.812 9.56243V7.87493C20.8121 7.72576 20.8714 7.5827 20.9769 7.47724L21.6907 6.76343C21.1402 6.82482 20.6316 7.08678 20.2621 7.49932C19.8925 7.91186 19.6878 8.44606 19.687 8.99993C19.6898 9.25906 19.7379 9.5157 19.8294 9.75818C19.8663 9.85903 19.8736 9.96835 19.8503 10.0732C19.8271 10.1781 19.7744 10.2741 19.6983 10.3499L18.7949 11.2499L19.4294 11.8844C19.5088 11.8423 19.5972 11.8203 19.687 11.8203C19.7769 11.8203 19.8653 11.8423 19.9447 11.8844Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M16.3761 22.3516C16.5223 22.3767 16.6527 22.4586 16.7389 22.5794L18 24.3445L19.2611 22.5794C19.3473 22.4586 19.4777 22.3767 19.624 22.3516C21.9842 21.9448 24.1059 20.6672 25.5695 18.7713C27.033 16.8755 27.7318 14.4994 27.5277 12.113C27.3236 9.7267 26.2314 7.50383 24.4672 5.88404C22.7029 4.26425 20.3951 3.36548 18 3.36548C15.605 3.36548 13.2971 4.26425 11.5328 5.88404C9.7686 7.50383 8.67642 9.7267 8.47231 12.113C8.2682 14.4994 8.96701 16.8755 10.4306 18.7713C11.8941 20.6672 14.0158 21.9448 16.3761 22.3516ZM10.8968 18.0153C10.708 17.5067 10.6456 16.9599 10.7149 16.4219C10.7841 15.8839 10.983 15.3708 11.2944 14.9267C11.6058 14.4825 12.0204 14.1206 12.5026 13.8721C12.9848 13.6236 13.5201 13.496 14.0625 13.5001C14.3292 13.5012 14.5946 13.5354 14.8528 13.6019L15.5171 12.9376L14.9546 12.3751H14.0625C13.9133 12.375 13.7703 12.3158 13.6648 12.2103L10.8523 9.39777C10.7469 9.29228 10.6876 9.14923 10.6876 9.00008C10.6876 8.85092 10.7469 8.70788 10.8523 8.60239L13.6648 5.78989C13.7703 5.68444 13.9134 5.6252 14.0625 5.6252C14.2117 5.6252 14.3547 5.68444 14.4602 5.78989L17.2727 8.60239C17.3782 8.70786 17.4375 8.85091 17.4375 9.00008V9.8922L18 10.4547L18.6643 9.79039C18.5978 9.53218 18.5636 9.26671 18.5625 9.00008C18.561 8.45856 18.6904 7.92471 18.9396 7.44396C19.1889 6.96321 19.5506 6.5498 19.994 6.23892C20.4374 5.92805 20.9493 5.72891 21.4862 5.65846C22.0231 5.58802 22.5691 5.64835 23.0777 5.83433C23.1671 5.86613 23.2469 5.92 23.3099 5.99095C23.3728 6.06189 23.4168 6.14759 23.4377 6.24009C23.4587 6.33259 23.4559 6.42888 23.4296 6.52001C23.4033 6.61114 23.3545 6.69415 23.2875 6.76133L21.9375 8.10795V9.00008H22.8296L24.1763 7.65289C24.2433 7.58589 24.3261 7.53689 24.417 7.51044C24.508 7.48399 24.6042 7.48095 24.6967 7.5016C24.7891 7.52225 24.8749 7.56591 24.946 7.62855C25.017 7.69118 25.0712 7.77076 25.1033 7.85989C25.292 8.36843 25.3545 8.91521 25.2852 9.45321C25.2159 9.99121 25.017 10.5043 24.7056 10.9485C24.3942 11.3926 23.9796 11.7545 23.4974 12.003C23.0153 12.2515 22.4799 12.3792 21.9375 12.3751C21.6709 12.374 21.4054 12.3398 21.1472 12.2733L20.7641 12.6563L25.1477 17.0399C25.2532 17.1454 25.3124 17.2884 25.3124 17.4376C25.3124 17.5867 25.2532 17.7298 25.1477 17.8353L22.8977 20.0853C22.7922 20.1907 22.6492 20.25 22.5 20.25C22.3509 20.25 22.2078 20.1907 22.1023 20.0853L17.7188 15.7017L17.3357 16.0848C17.4022 16.343 17.4364 16.6084 17.4375 16.8751C17.4366 17.7699 17.0808 18.6278 16.448 19.2606C15.8153 19.8933 14.9574 20.2492 14.0625 20.2501C13.6734 20.2478 13.2876 20.1771 12.9229 20.0414C12.8336 20.0094 12.7539 19.9553 12.6911 19.8842C12.6283 19.8131 12.5845 19.7273 12.5638 19.6347C12.5431 19.5422 12.5461 19.4459 12.5726 19.3548C12.5991 19.2637 12.6482 19.1808 12.7153 19.1138L14.0625 17.7672V16.8751H13.1704L11.8238 18.2251C11.7568 18.2921 11.674 18.3411 11.583 18.3675C11.492 18.394 11.3958 18.397 11.3034 18.3764C11.2109 18.3557 11.1252 18.3121 11.0541 18.2494C10.983 18.1868 10.9289 18.1072 10.8968 18.0181V18.0153Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M19.687 13.1707L18.2324 14.6252L22.4995 18.8923L23.954 17.4377L19.687 13.1707Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M12.9377 15.75H14.6252C14.7744 15.75 14.9174 15.8093 15.0229 15.9148C15.1284 16.0203 15.1877 16.1634 15.1877 16.3125V18C15.1876 18.1492 15.1284 18.2923 15.0229 18.3977L14.309 19.1121C14.8596 19.0506 15.3681 18.7885 15.7377 18.3759C16.1073 17.9632 16.312 17.429 16.3127 16.875C16.31 16.6159 16.2618 16.3593 16.1704 16.1168C16.134 16.0163 16.127 15.9076 16.1502 15.8033C16.1735 15.699 16.2259 15.6034 16.3014 15.5278L16.9472 14.8827C16.9051 14.8033 16.883 14.7149 16.883 14.625C16.883 14.5352 16.9051 14.4468 16.9472 14.3674L16.3127 13.7329L15.4127 14.6363C15.3371 14.7118 15.2416 14.7642 15.1373 14.7875C15.033 14.8107 14.9242 14.8037 14.8237 14.7673C14.5804 14.6756 14.3227 14.6274 14.0627 14.625C13.5088 14.6258 12.9746 14.8305 12.5621 15.2001C12.1495 15.5696 11.8876 16.0782 11.8262 16.6287L12.54 15.9148C12.6454 15.8094 12.7885 15.7501 12.9377 15.75Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M29.25 28.125H6.75C6.60082 28.125 6.45774 28.1843 6.35225 28.2898C6.24676 28.3952 6.1875 28.5383 6.1875 28.6875V29.25H29.8125V28.6875C29.8125 28.5383 29.7532 28.3952 29.6477 28.2898C29.5423 28.1843 29.3992 28.125 29.25 28.125Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M32.625 19.125H26.7148C25.1272 21.3619 22.7377 22.8999 20.0441 23.4186L18.4579 25.6393C18.4058 25.7122 18.3371 25.7717 18.2575 25.8127C18.1779 25.8537 18.0896 25.8751 18 25.8751C17.9104 25.8751 17.8221 25.8537 17.7425 25.8127C17.6629 25.7717 17.5942 25.7122 17.5421 25.6393L15.9559 23.4186C13.2623 22.8999 10.8728 21.3619 9.28519 19.125H3.375C2.92745 19.125 2.49822 19.3028 2.18176 19.6193C1.86529 19.9357 1.6875 20.3649 1.6875 20.8125V29.8125C1.6875 30.2601 1.86529 30.6893 2.18176 31.0057C2.49822 31.3222 2.92745 31.5 3.375 31.5H5.0625V28.6875C5.0625 28.2399 5.24029 27.8107 5.55676 27.4943C5.87322 27.1778 6.30245 27 6.75 27H29.25C29.6976 27 30.1268 27.1778 30.4432 27.4943C30.7597 27.8107 30.9375 28.2399 30.9375 28.6875V31.5H32.625C33.0726 31.5 33.5018 31.3222 33.8182 31.0057C34.1347 30.6893 34.3125 30.2601 34.3125 29.8125V20.8125C34.3125 20.3649 34.1347 19.9357 33.8182 19.6193C33.5018 19.3028 33.0726 19.125 32.625 19.125ZM31.5 23.0625C31.2775 23.0625 31.06 22.9965 30.875 22.8729C30.69 22.7493 30.5458 22.5736 30.4606 22.368C30.3755 22.1625 30.3532 21.9363 30.3966 21.718C30.44 21.4998 30.5472 21.2993 30.7045 21.142C30.8618 20.9847 31.0623 20.8775 31.2805 20.8341C31.4988 20.7907 31.725 20.813 31.9305 20.8981C32.1361 20.9833 32.3118 21.1275 32.4354 21.3125C32.559 21.4975 32.625 21.715 32.625 21.9375C32.625 22.2359 32.5065 22.522 32.2955 22.733C32.0845 22.944 31.7984 23.0625 31.5 23.0625Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M29.8125 30.375H6.1875V31.5H29.8125V30.375Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">AC Repair</h3>
+              <ul class="svc-points">
+                <li>
+                  Diagnose and fix issues including weak airflow, strange
+                  noises, leaks, and electrical problems.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_69_189)">
+                    <path
+                      d="M15.8906 36C15.2598 36 14.7656 35.5058 14.7656 34.875V32.1328C14.7656 31.6957 14.4868 31.3245 14.0553 31.1873C13.2088 30.9454 12.3311 30.5816 11.4486 30.1063C11.308 30.0324 11.1487 29.9931 10.9884 29.9931C10.7239 29.9931 10.4749 30.0965 10.2872 30.2841L8.34666 32.2247C8.13952 32.4319 7.85967 32.5459 7.55859 32.5459C7.25759 32.5459 6.97767 32.4319 6.7706 32.2247L3.77529 29.2294C3.56815 29.0223 3.4541 28.7424 3.4541 28.4414C3.4541 28.1403 3.56815 27.8605 3.77529 27.6533L5.71591 25.7128C6.02508 25.4035 6.0963 24.9365 5.89317 24.5507C5.41842 23.6689 5.05455 22.7913 4.81212 21.9428C4.67128 21.5202 4.2911 21.2344 3.86719 21.2344H1.125C0.494156 21.2344 0 20.7402 0 20.1094V15.8906C0 15.2598 0.494156 14.7656 1.125 14.7656H3.86719C4.30432 14.7656 4.6755 14.4868 4.81275 14.0553C5.05448 13.209 5.41835 12.3313 5.89352 11.4486C6.09637 11.0634 6.02515 10.5964 5.71598 10.2872L3.77536 8.34652C3.56822 8.13937 3.45417 7.85953 3.45417 7.55852C3.45417 7.25752 3.56822 6.97767 3.77536 6.7706L6.77067 3.77515C6.97774 3.56801 7.25766 3.45396 7.55866 3.45396C7.85974 3.45396 8.13959 3.56801 8.34673 3.77515L10.2873 5.71591C10.4749 5.90351 10.7239 6.0068 10.9884 6.0068C11.1487 6.0068 11.3081 5.96749 11.4493 5.89317C12.3312 5.41828 13.2088 5.05434 14.0574 4.81198C14.4798 4.67107 14.7656 4.29096 14.7656 3.86719V1.125C14.7656 0.494156 15.2598 0 15.8906 0H20.1094C20.7402 0 21.2344 0.494156 21.2344 1.125V3.86719C21.2344 4.30418 21.5132 4.67536 21.9447 4.81261C22.7912 5.05441 23.6689 5.41828 24.5514 5.89352C24.692 5.96756 24.8514 6.00687 25.0117 6.00687C25.2762 6.00687 25.5252 5.90351 25.7128 5.71598L27.6533 3.77522C27.8605 3.56808 28.1403 3.45403 28.4414 3.45403C28.7424 3.45403 29.0223 3.56808 29.2294 3.77522L32.2247 6.77067C32.4319 6.97774 32.5459 7.25759 32.5459 7.55859C32.5459 7.8596 32.4319 8.13945 32.2247 8.34659L30.2841 10.2873C29.9749 10.5964 29.9037 11.0635 30.1068 11.4493C30.5817 12.3313 30.9455 13.209 31.1879 14.0573C31.3288 14.4798 31.709 14.7656 32.1328 14.7656H34.875C35.5058 14.7656 36 15.2598 36 15.8906V20.1094C36 20.7402 35.5058 21.2344 34.875 21.2344H32.1328C31.6957 21.2344 31.3245 21.5132 31.1873 21.9447C30.9454 22.7912 30.5816 23.6689 30.1065 24.5512C29.9036 24.9365 29.9749 25.4035 30.284 25.7128L32.2246 27.6533C32.4318 27.8605 32.5458 28.1403 32.5458 28.4414C32.5458 28.7424 32.4318 29.0223 32.2246 29.2294L29.2293 32.2247C29.0223 32.4319 28.7423 32.5459 28.4413 32.5459C28.1403 32.5459 27.8604 32.4319 27.6533 32.2247L25.7127 30.2841C25.5251 30.0965 25.2761 29.9931 25.0115 29.9931C24.8512 29.9931 24.6919 30.0324 24.5507 30.1067C23.6688 30.5816 22.7912 30.9454 21.9426 31.1879C21.5202 31.3288 21.2344 31.709 21.2344 32.1328V34.875C21.2344 35.5058 20.7402 36 20.1094 36H15.8906ZM18 8.57812C12.8048 8.57812 8.57812 12.8048 8.57812 18C8.57812 23.1952 12.8048 27.4219 18 27.4219C23.1952 27.4219 27.4219 23.1952 27.4219 18C27.4219 12.8048 23.1952 8.57812 18 8.57812Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M20.4184 15.145L16.9453 18.618L15.5816 17.2543C15.1697 16.8423 14.5022 16.8423 14.0902 17.2543C13.6783 17.6662 13.6783 18.3337 14.0902 18.7457L16.1996 20.855C16.6116 21.267 17.279 21.2671 17.691 20.855L21.9097 16.6363C22.3217 16.2243 22.3217 15.5569 21.9097 15.1449C21.4978 14.7329 20.8304 14.7329 20.4184 15.145Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_69_189">
+                      <rect width="36" height="36" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="svc-title">AC Installation</h3>
+              <ul class="svc-points">
+                <li>
+                  Upgrade or install central AC, ductless mini-splits, high-SEER
+                  systems, thermostats and more.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_69_194)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8042 3.60093L28.1828 16.381L35.5613 29.1609C36.1463 30.1741 36.1463 31.3856 35.5614 32.3989C34.9763 33.4122 33.9271 34.018 32.7572 34.018H3.24295C2.07299 34.018 1.02378 33.4122 0.438797 32.399C-0.146266 31.3857 -0.146266 30.1741 0.438797 29.1609L7.81731 16.381L15.1959 3.60093C15.7809 2.58767 16.8301 1.98193 18.0001 1.98193C19.1701 1.98193 20.2192 2.58767 20.8042 3.60093ZM18.0001 25.8321C18.817 25.8321 19.4793 26.4944 19.4793 27.3114C19.4793 28.1283 18.817 28.7905 18.0001 28.7905C17.1831 28.7905 16.5208 28.1283 16.5208 27.3114C16.5208 26.4944 17.1831 25.8321 18.0001 25.8321ZM18.0008 9.49499C18.9943 9.49499 19.8959 10.3132 19.8416 11.3358L19.1841 23.6954H17.0147L16.16 11.3358C16.0902 10.3258 16.9884 9.49499 18.0008 9.49499Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_69_194">
+                      <rect width="36" height="36" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="svc-title">AC Maintenance & Tune-Ups</h3>
+              <ul class="svc-points">
+                <li>
+                  Preventative care to improve efficiency, extend lifespan, and
+                  avoid costly breakdowns.
+                </li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="38"
+                  height="38"
+                  viewBox="0 0 38 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1298_4333)">
+                    <path
+                      d="M8.55227 4.0166C7.44088 4.14024 6.38835 4.58015 5.51953 5.28412H8.5522L8.55227 4.0166Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.7409 11.8149H9.85938V13.1211H14.0898C14.3604 12.7144 14.5791 12.2756 14.7409 11.8149Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.55152 6.59033H4.32103C4.04982 6.99682 3.83039 7.43553 3.66797 7.89645H8.55145V6.59033H8.55152Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M9.85938 14.4268V15.6943C10.9708 15.5706 12.0233 15.1307 12.892 14.4268H9.85938Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M9.85938 4.0166V5.28412H12.892C12.0232 4.58015 10.9707 4.14024 9.85938 4.0166Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.55259 9.20264H3.3667C3.31527 9.63649 3.31527 10.0749 3.3667 10.5088H8.55252L8.55259 9.20264Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.55227 15.6943V14.4268H5.51953C6.38835 15.1307 7.44088 15.5706 8.55227 15.6943Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M3.32884 22.2634H5.941C6.30164 22.2634 6.59406 21.971 6.59406 21.6103V20.3042H2.67578V21.6103C2.67578 21.971 2.9682 22.2634 3.32884 22.2634Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M8.54952 13.1206V11.8145H3.66797C3.83039 12.2753 4.04982 12.7141 4.32103 13.1206H8.54952Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M22.1802 36.1571L28.5148 25.596C26.9835 25.2102 25.6006 24.3802 24.5397 23.2104L18.2051 33.7729C17.7791 34.4831 17.7645 35.3666 18.1666 36.0905C18.5686 36.8144 19.3265 37.2689 20.1545 37.2826C20.9824 37.2963 21.7549 36.8673 22.1808 36.1571H22.1802ZM19.969 35.2311C19.66 35.0453 19.56 34.6442 19.7457 34.3351L20.9212 32.3759C21.0413 32.1758 21.2591 32.0551 21.4924 32.0591C21.7258 32.0631 21.9392 32.1913 22.0524 32.3955C22.1656 32.5996 22.1613 32.8485 22.0411 33.0486L20.8657 35.0078C20.6799 35.3169 20.2788 35.4168 19.9697 35.2311H19.969V35.2311Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M0.714844 17.6921C0.714844 18.4135 1.29955 18.9982 2.02089 18.9982H22.5266C22.2366 17.1409 22.6063 15.2407 23.5715 13.6276V2.01901C23.5715 1.29766 22.9868 0.712891 22.2654 0.712891H2.02089C1.29955 0.712891 0.714844 1.29766 0.714844 2.01901V17.6921ZM20.3062 15.08C20.6669 15.08 20.9593 15.3723 20.9593 15.733C20.9593 16.0937 20.667 16.3861 20.3062 16.3861C19.9455 16.3861 19.6532 16.0937 19.6532 15.733C19.6532 15.3723 19.9456 15.08 20.3062 15.08ZM17.6941 15.08C18.0547 15.08 18.3471 15.3723 18.3471 15.733C18.3471 16.0937 18.0548 16.3861 17.6941 16.3861C17.3334 16.3861 17.041 16.0937 17.041 15.733C17.041 15.3723 17.3334 15.08 17.6941 15.08ZM9.20446 2.67207C13.1718 2.67207 16.388 5.88822 16.388 9.85557C16.388 13.8229 13.1718 17.0391 9.20446 17.0391C5.23711 17.0391 2.02089 13.8229 2.02089 9.85557C2.0256 5.89015 5.23904 2.67671 9.20446 2.67207Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M15.0837 9.8557C15.0831 9.63749 15.0702 9.41942 15.0452 9.20264H9.85938V10.5088H15.0452C15.0703 10.292 15.0831 10.0739 15.0837 9.8557Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M27.0258 23.5777C29.3411 24.9679 32.2612 24.8494 34.4563 23.2763C36.6514 21.7031 37.7018 18.9759 37.1291 16.3367C37.1004 16.2045 36.9942 16.103 36.8608 16.0804C36.7274 16.0578 36.5936 16.1187 36.5231 16.2341L33.8736 20.6513C33.7556 20.8482 33.5429 20.9687 33.3133 20.9687H28.9823C28.7409 20.9687 28.5191 20.8357 28.4057 20.6225L26.3675 16.8015C26.2596 16.5991 26.2658 16.355 26.3838 16.1582L29.0352 11.7384C29.1077 11.6234 29.1014 11.4756 29.0193 11.3672C28.9372 11.2588 28.7966 11.2126 28.6663 11.2513C26.0655 11.9858 24.1503 14.1962 23.7937 16.8751C23.4373 19.5541 24.7077 22.1886 27.0258 23.5777Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M18.3484 22.2634H20.9605C21.3212 22.2634 21.6136 21.971 21.6136 21.6103V20.3042H17.6953V21.6103C17.6953 21.971 17.9877 22.2634 18.3484 22.2634Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.0898 6.59033H9.85938V7.89645H14.7409C14.5791 7.43567 14.3604 6.9969 14.0898 6.59033Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1298_4333">
+                      <rect
+                        width="36.57"
+                        height="36.57"
+                        fill="white"
+                        transform="translate(0.714844 0.712891)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h3 class="svc-title">Duct Cleaning Repair</h3>
+              <ul class="svc-points">
+                <li>Energy Efficient Airflow for lower energy bills.</li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M32.918 12.9993L19.0524 2.59869C18.428 2.13182 17.573 2.13182 16.9486 2.59869L3.08298 12.9993C2.17173 13.6856 1.96923 14.9737 2.63298 15.8624C3.30236 16.7456 4.59611 16.9087 5.50736 16.2224L16.943 7.64994C17.5674 7.18307 18.4224 7.18307 19.0467 7.64994L30.4824 16.2224C31.3936 16.9087 32.6874 16.7512 33.3567 15.8624C34.0261 14.9793 33.8236 13.6912 32.9067 12.9993H32.918Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M29.8123 17.1169L18.3767 8.55003C18.2361 8.44315 18.0954 8.42065 17.9998 8.42065C17.9042 8.42065 17.7636 8.44315 17.6229 8.55003L6.1873 17.1169C6.00168 17.2575 5.8048 17.3757 5.59668 17.4657L5.64168 31.5675C5.64168 32.76 6.60918 33.7275 7.80168 33.7332L28.3048 33.75C29.5029 33.75 30.4704 32.7825 30.4704 31.59L30.4311 17.4825C30.2117 17.3869 30.0092 17.2632 29.8123 17.1169ZM17.9998 29.6888C13.8711 29.6888 10.5186 26.3419 10.5186 22.2132C10.5186 18.0844 13.8654 14.7375 17.9998 14.7375C22.1342 14.7375 25.4754 18.0844 25.4754 22.2132C25.4754 26.3419 22.1286 29.6888 17.9998 29.6888Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M21.9831 21.4707C21.9831 21.4707 22.0393 21.4763 22.0618 21.4763C22.3375 21.4763 22.5793 21.2738 22.6187 20.9926C22.6637 20.6832 22.45 20.402 22.1406 20.357L21.2743 20.2332L21.5668 19.412C21.6681 19.1195 21.5162 18.7988 21.2237 18.692C20.9312 18.5851 20.6106 18.7426 20.5037 19.0351L20.0481 20.3176L18.5575 21.2176V19.4738L19.4181 18.422C19.615 18.1801 19.5812 17.8257 19.3393 17.6288C19.0975 17.432 18.7431 17.4657 18.5462 17.7076L17.995 18.3826L17.4437 17.7076C17.2468 17.4657 16.8925 17.432 16.6506 17.6288C16.4087 17.8257 16.375 18.1801 16.5718 18.422L17.4325 19.4738V21.2176L15.9418 20.3176L15.4862 19.0351C15.3793 18.7426 15.0587 18.5907 14.7662 18.692C14.4737 18.7988 14.3218 19.1195 14.4231 19.412L14.7156 20.2332L13.8493 20.357C13.54 20.402 13.3262 20.6888 13.3712 20.9926C13.4106 21.2738 13.6525 21.4763 13.9281 21.4763C13.9562 21.4763 13.9843 21.4763 14.0068 21.4707L15.3512 21.2795L16.8981 22.2132L15.3512 23.147L14.0068 22.9557C13.7031 22.9107 13.4162 23.1245 13.3712 23.4338C13.3262 23.7432 13.54 24.0245 13.8493 24.0695L14.7156 24.1932L14.4231 25.0145C14.3162 25.307 14.4737 25.6276 14.7662 25.7345C14.8281 25.757 14.89 25.7682 14.9575 25.7682C15.1881 25.7682 15.4075 25.622 15.4862 25.397L15.9418 24.1145L17.4325 23.2145V24.9582L16.5718 26.0101C16.375 26.252 16.4087 26.6063 16.6506 26.8032C16.8925 27.0001 17.2468 26.9663 17.4437 26.7245L17.995 26.0495L18.5462 26.7245C18.6587 26.8595 18.8162 26.9326 18.9793 26.9326C19.1031 26.9326 19.2325 26.8932 19.3337 26.8032C19.5756 26.6063 19.6093 26.252 19.4125 26.0101L18.5518 24.9582V23.2145L20.0425 24.1145L20.4981 25.397C20.5825 25.6276 20.7962 25.7682 21.0268 25.7682C21.0887 25.7682 21.1506 25.757 21.2181 25.7345C21.5106 25.6276 21.6625 25.307 21.5612 25.0145L21.2687 24.1932L22.135 24.0695C22.4443 24.0245 22.6581 23.7376 22.6131 23.4338C22.5681 23.1245 22.2925 22.9107 21.9775 22.9557L20.6275 23.147L19.0806 22.2132L20.6275 21.2795L21.9775 21.4707H21.9831Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M28.7207 4.30891C28.7207 3.74641 28.2651 3.28516 27.697 3.28516H25.1038C24.5413 3.28516 24.0801 3.74641 24.0801 4.30891V4.96703L28.7207 8.44328V4.30891Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">Residential HVAC</h3>
+              <ul class="svc-points">
+                <li>Home or Apartment Residential HVAC services.</li>
+              </ul>
+            </article>
+            <article class="svc-item">
+              <div class="svc-icon" aria-hidden="true">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M27.4296 20.9247C27.2313 21.6127 26.9574 22.2687 26.6176 22.883L27.3048 24.2317C27.5244 24.6627 27.4449 25.1644 27.1029 25.5064L25.5075 27.1019C25.1654 27.4439 24.6638 27.5233 24.2328 27.3038L22.884 26.6165C22.2697 26.9564 21.6137 27.2302 20.9258 27.4286L20.4584 28.8672C20.3089 29.3272 19.898 29.6258 19.4143 29.6258H17.158C16.6743 29.6258 16.2634 29.3273 16.1139 28.8672L15.6465 27.4286C14.9585 27.2303 14.3025 26.9564 13.6882 26.6166L12.3395 27.3038C11.9085 27.5234 11.4068 27.4439 11.0648 27.1019L9.46934 25.5064C9.12729 25.1644 9.04786 24.6627 9.26742 24.2317L9.95468 22.883C9.61484 22.2686 9.34099 21.6126 9.14264 20.9247L7.70406 20.4573C7.244 20.3078 6.94544 19.8969 6.94544 19.4132V17.1569C6.94544 16.6732 7.244 16.2622 7.70399 16.1127L9.14264 15.6453C9.34092 14.9573 9.61484 14.3014 9.95461 13.687L9.26742 12.3384C9.04779 11.9073 9.12729 11.4057 9.46934 11.0636L11.0647 9.46819C11.4068 9.12614 11.9085 9.04671 12.3394 9.26627L13.6882 9.95353C14.3025 9.61369 14.9585 9.33984 15.6464 9.14149L16.1138 7.70291C16.2633 7.24285 16.6742 6.94429 17.1579 6.94429H19.4142C19.8979 6.94429 20.3089 7.24278 20.4583 7.70291L20.9258 9.14171C21.6137 9.33998 22.2696 9.61383 22.8838 9.95353L24.2326 9.26627C24.6637 9.04664 25.1653 9.12614 25.5074 9.46819L27.1028 11.0636C27.4449 11.4056 27.5243 11.9072 27.3047 12.3383L26.6175 13.687C26.9573 14.3014 27.2312 14.9573 27.4295 15.6452L28.8682 16.1126C29.3282 16.2621 29.6268 16.6731 29.6268 17.1568V19.413C29.6268 19.8968 29.3283 20.3076 28.8682 20.4572L27.4295 20.9246L27.4296 20.9247ZM5.88349 9.67262L7.32343 11.1126L8.77037 4.97944L2.63733 6.42638L4.11313 7.90218C-0.935534 14.7758 -0.352557 24.4911 5.8637 30.7074C11.4575 36.3011 19.8846 37.3333 26.5249 33.8055L24.6846 31.9652C19.0922 34.5804 12.2274 33.5795 7.60949 28.9616C2.35984 23.712 1.78557 15.5593 5.88349 9.67262ZM27.8016 31.5907L33.9347 30.1437L32.4594 28.6684C37.5081 21.7949 36.9246 12.0792 30.7083 5.86283C25.1145 0.268982 16.6873 -0.763191 10.047 2.76467L11.8873 4.60496C17.4797 1.9897 24.3446 2.99059 28.9625 7.60848C34.2122 12.8581 34.7869 21.0112 30.6888 26.8979L29.2484 25.4575L27.8015 31.5906L27.8016 31.5907ZM20.4911 16.0802C19.2733 14.8624 17.299 14.8624 16.0812 16.0802C14.8635 17.2979 14.8635 19.2722 16.0812 20.49C17.299 21.7077 19.2733 21.7077 20.4911 20.49C21.7088 19.2722 21.7088 17.2979 20.4911 16.0802ZM22.7702 13.801C20.2937 11.3245 16.2786 11.3245 13.8021 13.801C11.3256 16.2775 11.3256 20.2926 13.8021 22.7691C16.2786 25.2456 20.2937 25.2456 22.7702 22.7691C25.2467 20.2926 25.2467 16.2775 22.7702 13.801Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="svc-title">Commercial HVAC</h3>
+              <ul class="svc-points">
+                <li>
+                  Commercial or Industrial Buildings HVAC to support businesses.
+                </li>
+              </ul>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FINANCING CTA | financing-cta.css-->
-    <section class="financing-cta" id="financing">
-      <div class="financing-cta__bg" aria-hidden="true"></div>
+      <!-- PROS SECTION | pros.csss-->
+      <section class="pros" id="guarantee">
+        <div class="pros-inner">
+          <!-- LEFT: image card -->
+          <div class="pros-media" aria-hidden="true">
+            <div class="pros-photo">
+              <img
+                src="assets/images/pro-bg.webp"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
 
-      <div class="financing-cta__inner">
-        <div class="financing-cta__content">
-          <h2 class="financing-cta__title">
-            0% Financing Available As Low As $30 A Month
-          </h2>
+          <!-- RIGHT: content -->
+          <div class="pros-content">
+            <h2 class="pros-title">Pros of Using Green Air Innovations</h2>
 
-          <!-- <p class="financing-cta__text">
+            <div class="pros-grid">
+              <article class="pros-card">
+                <h3>Guaranteed Comfort:</h3>
+                <p>
+                  Restore consistent, efficient cooling and heating for your
+                  home or business.
+                </p>
+              </article>
+
+              <article class="pros-card">
+                <h3>Energy Efficiency:</h3>
+                <p>
+                  Reduce utility costs with properly sized, high-efficiency
+                  systems.
+                </p>
+              </article>
+
+              <article class="pros-card">
+                <h3>Extend Equipment Life:</h3>
+                <p>
+                  Regular maintenance and professional installation help your AC
+                  and HVAC systems last longer.
+                </p>
+              </article>
+
+              <article class="pros-card">
+                <h3>Tailored Solutions:</h3>
+                <p>
+                  Customized residential and commercial solutions to meet your
+                  specific space, usage, and comfort needs.
+                </p>
+              </article>
+
+              <article class="pros-card">
+                <h3>Prevent Costly Repairs:</h3>
+                <p>
+                  Early detection and maintenance prevent major breakdowns and
+                  expensive replacements.
+                </p>
+              </article>
+
+              <article class="pros-card">
+                <h3>Commercial and Residential:</h3>
+                <p>
+                  We help homes and businesses improve their AC and HVAC so
+                  you’re staying cool year-round.
+                </p>
+              </article>
+            </div>
+
+            <div class="pros-cta">
+              <a class="pros-btn" href="tel:+17869101693">
+                SCHEDULE A FREE CONSULTATION <span aria-hidden="true">➤</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINANCING CTA | financing-cta.css-->
+      <section class="financing-cta" id="financing">
+        <div class="financing-cta__bg" aria-hidden="true"></div>
+
+        <div class="financing-cta__inner">
+          <div class="financing-cta__content">
+            <h2 class="financing-cta__title">
+              0% Financing Available As Low As $30 A Month
+            </h2>
+
+            <!-- <p class="financing-cta__text">
               We’re excited to offer financing solutions that help homeowners
               stay comfortable and within budget. Our trusted team can assist
               you with any financing-related questions.
             </p> -->
 
-          <a class="financing-cta__btn" href="tel:+17869101693">
-            CALL FOR $1000 OFF NEW AC UNIT<span aria-hidden="true">▶</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICE GUARANTEE | service-guaranteee.css-->
-    <section class="ga-guarantee">
-      <div class="ga-guarantee__bar">
-        <!-- LEFT -->
-        <div class="ga-guarantee__left">
-          <h2 class="ga-guarantee__title">We Offer 1-Year<br />Guarantees</h2>
-        </div>
-
-        <!-- CENTER BADGE -->
-        <div class="ga-guarantee__badge">
-          <img src="v2/assets/images/guarantee-badge.svg" alt="1 Year Service Guarantee" loading="lazy" />
-        </div>
-
-        <!-- RIGHT LIST -->
-        <ul class="ga-guarantee__list">
-          <li class="ga-guarantee__item go-left">
-            <span class="ga-guarantee__ico" aria-hidden="true">
-              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M25.7852 21.4133C25.2867 21.0425 24.582 21.146 24.2111 21.6445C24.0072 21.9186 23.7889 22.1876 23.5624 22.4438C23.1509 22.9093 23.1946 23.6203 23.6601 24.0318C23.8742 24.221 24.14 24.3139 24.4048 24.3139C24.716 24.3139 25.0258 24.1855 25.2481 23.934C25.5164 23.6306 25.7748 23.3121 26.0164 22.9874C26.3872 22.489 26.2838 21.7841 25.7852 21.4133Z"
-                  fill="#0767D8" />
-                <path
-                  d="M27.6669 16.1371C27.0602 16.0049 26.4605 16.39 26.3284 16.997C26.2557 17.331 26.1678 17.6655 26.067 17.9916C25.8836 18.5852 26.2162 19.2151 26.8098 19.3985C26.9204 19.4327 27.0322 19.4489 27.1423 19.4489C27.6226 19.4489 28.0675 19.1388 28.2168 18.6557C28.3363 18.2688 28.4406 17.8717 28.5269 17.4756C28.659 16.8685 28.274 16.2692 27.6669 16.1371Z"
-                  fill="#0767D8" />
-                <path
-                  d="M20.3704 25.0162C20.0718 25.1829 19.7625 25.3387 19.4513 25.4793C18.885 25.735 18.6333 26.4014 18.889 26.9676C19.0769 27.3837 19.4864 27.6299 19.915 27.6299C20.0698 27.6299 20.2271 27.5977 20.3774 27.5299C20.7465 27.3632 21.1132 27.1784 21.4673 26.9807C22.0098 26.6778 22.2041 25.9925 21.9011 25.45C21.5983 24.9076 20.913 24.7134 20.3704 25.0162Z"
-                  fill="#0767D8" />
-                <path
-                  d="M13.2751 5.3999V13.9339L9.1498 18.0592C8.71048 18.4986 8.71048 19.2109 9.1498 19.6502C9.36951 19.8699 9.65734 19.9797 9.94534 19.9797C10.2332 19.9797 10.5212 19.8698 10.7409 19.6502L15.1957 15.1954C15.4066 14.9845 15.5251 14.6983 15.5251 14.3999V5.3999C15.5251 4.77856 15.0215 4.2749 14.4001 4.2749C13.7788 4.2749 13.2751 4.77856 13.2751 5.3999Z"
-                  fill="#0767D8" />
-                <path
-                  d="M27.675 2.41875C27.0537 2.41875 26.55 2.92241 26.55 3.54375V6.66765C23.9314 2.56095 19.3585 0 14.4 0C10.5536 0 6.93748 1.49788 4.21763 4.21763C1.49788 6.93748 0 10.5536 0 14.4C0 18.2464 1.49788 21.8625 4.21763 24.5824C6.93748 27.3021 10.5536 28.8 14.4 28.8C14.4095 28.8 14.4187 28.7988 14.4281 28.7986C14.4376 28.7988 14.4467 28.8 14.4562 28.8C14.8617 28.8 15.2711 28.7829 15.6733 28.7493C16.2925 28.6974 16.7524 28.1535 16.7006 27.5343C16.6486 26.9152 16.1054 26.455 15.4856 26.5071C15.1456 26.5355 14.7993 26.55 14.4562 26.55C14.4467 26.55 14.4376 26.5512 14.4281 26.5514C14.4187 26.5512 14.4095 26.55 14.4 26.55C7.70046 26.55 2.25 21.0995 2.25 14.4C2.25 7.70046 7.70046 2.25 14.4 2.25C18.7176 2.25 22.6888 4.55136 24.8589 8.2125H21.7655C21.1442 8.2125 20.6405 8.71616 20.6405 9.3375C20.6405 9.95884 21.1442 10.4625 21.7655 10.4625H25.2C25.8851 10.4625 26.5261 10.27 27.0718 9.93639C27.1069 9.91637 27.1407 9.89482 27.1729 9.87159C28.1519 9.22747 28.8 8.11952 28.8 6.8625V3.54375C28.8 2.92241 28.2963 2.41875 27.675 2.41875Z"
-                  fill="#0767D8" />
-              </svg>
-            </span>
-            <span class="ga-guarantee__text">24-Hour Emergency Service Available</span>
-          </li>
-
-          <li class="ga-guarantee__item go-left">
-            <span class="ga-guarantee__ico" aria-hidden="true">
-              <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2403_241)">
-                  <g mask="url(#mask0_2403_241)">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M12.3402 2.53746C11.3564 2.53746 10.5482 3.34562 10.5482 4.32946V4.64946H19.9562V4.32946C19.9562 3.34562 19.1481 2.53746 18.1642 2.53746H12.3402ZM9.01221 4.32946C9.01221 2.49731 10.5081 1.00146 12.3402 1.00146H18.1642C19.9963 1.00146 21.4922 2.49731 21.4922 4.32946V5.41746C21.4922 5.84162 21.1483 6.18546 20.7242 6.18546H9.78021C9.35605 6.18546 9.01221 5.84162 9.01221 5.41746V4.32946Z"
-                      fill="#0767D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M4.1499 4.20135C4.1499 3.77718 4.49375 3.43335 4.9179 3.43335H7.3499C7.77406 3.43335 8.1179 3.77718 8.1179 4.20135C8.1179 4.6255 7.77406 4.96935 7.3499 4.96935H5.6859V28.9693H24.8219V4.96935H23.1579C22.7337 4.96935 22.3899 4.6255 22.3899 4.20135C22.3899 3.77718 22.7337 3.43335 23.1579 3.43335H25.5899C26.0141 3.43335 26.3579 3.77718 26.3579 4.20135V29.7373C26.3579 30.1615 26.0141 30.5053 25.5899 30.5053H4.9179C4.49375 30.5053 4.1499 30.1615 4.1499 29.7373V4.20135Z"
-                      fill="#0767D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M13.9736 10.9547C14.2735 11.2546 14.2735 11.7409 13.9736 12.0408L10.3256 15.6888C10.1815 15.8328 9.98621 15.9137 9.78252 15.9137C9.57883 15.9137 9.38349 15.8328 9.23947 15.6888L6.80747 13.2568C6.50754 12.9569 6.50754 12.4706 6.80747 12.1707C7.10738 11.8708 7.59366 11.8708 7.89358 12.1707L9.78252 14.0596L12.8874 10.9547C13.1874 10.6548 13.6737 10.6548 13.9736 10.9547Z"
-                      fill="#0767D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M16.3101 13.9296C16.3101 13.5055 16.6539 13.1616 17.0781 13.1616H21.9421C22.3663 13.1616 22.7101 13.5055 22.7101 13.9296C22.7101 14.3538 22.3663 14.6976 21.9421 14.6976H17.0781C16.6539 14.6976 16.3101 14.3538 16.3101 13.9296Z"
-                      fill="#0767D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M13.9736 18.2507C14.2735 18.5506 14.2735 19.0368 13.9736 19.3367L10.3256 22.9847C10.0257 23.2846 9.53938 23.2846 9.23947 22.9847L6.80747 20.5527C6.50754 20.2528 6.50754 19.7666 6.80747 19.4667C7.10738 19.1666 7.59366 19.1666 7.89358 19.4667L9.78252 21.3556L12.8874 18.2507C13.1874 17.9506 13.6737 17.9506 13.9736 18.2507Z"
-                      fill="#0767D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M16.3101 21.2255C16.3101 20.8015 16.6539 20.4575 17.0781 20.4575H21.9421C22.3663 20.4575 22.7101 20.8015 22.7101 21.2255C22.7101 21.6497 22.3663 21.9935 21.9421 21.9935H17.0781C16.6539 21.9935 16.3101 21.6497 16.3101 21.2255Z"
-                      fill="#0767D8" />
-                  </g>
-                </g>
-                <defs>
-                  <clipPath id="clip0_2403_241">
-                    <rect width="30.72" height="32" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            <span class="ga-guarantee__text">Transparent<br />Pricing</span>
-          </li>
-
-          <li class="ga-guarantee__item">
-            <span class="ga-guarantee__ico" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2403_262)">
-                  <path
-                    d="M7.16228 31.3531C6.81169 31.3531 6.46353 31.2437 6.16641 31.0289C5.61292 30.6277 5.35437 29.9382 5.50501 29.2729L7.56366 20.2046L0.582033 14.0819C0.0688363 13.6339 -0.127214 12.9244 0.0834851 12.2752C0.294184 11.6272 0.867441 11.1685 1.54617 11.1057L10.7837 10.2671L14.4359 1.72024C14.7052 1.0923 15.3185 0.686768 15.9999 0.686768C16.6813 0.686768 17.2946 1.0923 17.5639 1.71878L21.2161 10.2671L30.4522 11.1057C31.1324 11.167 31.7056 11.6272 31.9163 12.2752C32.127 12.9232 31.9322 13.6339 31.419 14.0819L24.4374 20.2034L26.496 29.2715C26.6469 29.9382 26.3881 30.6277 25.8349 31.0276C25.2829 31.4275 24.5468 31.4583 23.9654 31.1089L15.9999 26.3488L8.03437 31.1116C7.76508 31.2715 7.46502 31.3531 7.16228 31.3531ZM15.9999 24.2982C16.3027 24.2982 16.6025 24.3795 16.872 24.5394L24.3895 29.0356L22.4466 20.4766C22.3079 19.8674 22.5147 19.2314 22.9854 18.8193L29.5777 13.0379L20.856 12.2459C20.228 12.1885 19.688 11.7937 19.4426 11.2151L15.9999 3.14948L12.553 11.2163C12.3104 11.7911 11.7703 12.1858 11.1438 12.2432L2.42095 13.0352L9.01291 18.8166C9.48509 19.23 9.69164 19.8647 9.55175 20.4754L7.61029 29.0342L15.1278 24.5394C15.3971 24.3795 15.6972 24.2982 15.9999 24.2982ZM10.7132 10.4324C10.7132 10.4324 10.7132 10.4338 10.7117 10.4351L10.7132 10.4324ZM21.284 10.4285L21.2854 10.4312C21.2854 10.4297 21.2854 10.4297 21.284 10.4285Z"
-                    fill="#0767D8" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_2403_262">
-                    <rect width="32" height="32" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            <span class="ga-guarantee__text">20+ Years of<br />Experience</span>
-          </li>
-
-          <li class="ga-guarantee__item go-right">
-            <span class="ga-guarantee__ico" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.56 31.131C14.9867 31.131 14.44 30.891 14.0534 30.4777C11.0267 27.2377 3.98669 18.9843 4.00002 12.4377C4.00002 6.10433 9.18669 0.944336 15.56 0.944336C21.9334 0.944336 27.1201 6.091 27.1201 12.4243C27.1201 18.7577 20.0801 27.1977 17.0667 30.451C16.68 30.8643 16.1334 31.1043 15.56 31.1043V31.131ZM15.56 2.54433C10.0667 2.54433 5.58669 6.971 5.58669 12.4243C5.58669 18.5577 12.96 26.9443 15.2134 29.371C15.3334 29.5043 15.48 29.5177 15.5467 29.5177C15.6267 29.5177 15.76 29.5043 15.88 29.371C18.1334 26.9443 25.5067 18.531 25.5067 12.4243C25.5067 6.971 21.0401 2.54433 15.5334 2.54433H15.56Z"
-                  fill="#0767D8" />
-                <path
-                  d="M15.5595 18.4645C12.3195 18.4645 9.69287 15.8379 9.69287 12.5979C9.69287 9.35787 12.3195 6.7312 15.5595 6.7312C18.7996 6.7312 21.4262 9.35787 21.4262 12.5979C21.4262 15.8379 18.7996 18.4645 15.5595 18.4645ZM15.5595 8.3312C13.2129 8.3312 11.2929 10.2512 11.2929 12.5979C11.2929 14.9445 13.2129 16.8645 15.5595 16.8645C17.9062 16.8645 19.8262 14.9445 19.8262 12.5979C19.8262 10.2512 17.9062 8.3312 15.5595 8.3312Z"
-                  fill="#0767D8" />
-              </svg>
-            </span>
-            <span class="ga-guarantee__text">Servicing All Of<br />South Florida</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- REVIEWS | reviews.css-->
-    <section class="reviews-split" id="reviews">
-      <div class="reviews-split__inner">
-        <!-- LEFT -->
-        <div class="reviews-split__left">
-          <h2 class="reviews-split__title">
-            Trusted with 90+ Five Star Reviews
-          </h2>
-        </div>
-
-        <!-- RIGHT -->
-        <div class="reviews-split__right">
-          <div class="reviews-split__track" aria-label="Customer reviews">
-            <!-- Review 1 -->
-            <article class="review2-card">
-              <div class="review2-stars" aria-label="5 star rating">
-                ★★★★★
-              </div>
-
-              <p class="review2-text" data-name="CANDACE B." data-stars="5"
-                data-full="I recently had a fantastic experience with Green Aire for some much-needed maintenance and repairs on our three A/C units. From start to finish, their service was top-notch. They replaced the ductwork and handled other essential maintenance tasks efficiently. The team was professional, punctual, and extremely knowledgeable, taking the time to explain what needed to be done and ensuring everything was functioning perfectly before they left. Our A/C units are running better than ever, and I truly appreciate how thorough their cleaning and servicing were. It’s clear that Green Aire takes pride in their work, and I’ll definitely be calling them again for future maintenance needs. Highly recommend!">
-                I recently had a fantastic experience with Green Aire for some
-                much-needed maintenance and repairs on our three A/C units.
-                From start to finish, their service was top-notch...
-              </p>
-
-              <button class="review2-link js-readmore" type="button">
-                Read more
-              </button>
-              <div class="review2-meta">Miami, FL</div>
-            </article>
-
-            <!-- Review 2 -->
-            <article class="review2-card">
-              <div class="review2-stars" aria-label="5 star rating">
-                ★★★★★
-              </div>
-
-              <p class="review2-text" data-name="PATRICK A." data-stars="5"
-                data-full="Exceptional service from start to finish! We had our entire air conditioning system and ductwork replaced, and the team was on time, professional, efficient, and incredibly knowledgeable. They explained every step of the process, worked quickly without cutting corners, and left everything spotless. The difference in our home’s comfort is night and day. Highly recommend them for any AC needs!">
-                Exceptional service from start to finish! We had our entire
-                air conditioning system and ductwork replaced, and the team
-                was on time, professional, efficient...
-              </p>
-
-              <button class="review2-link js-readmore" type="button">
-                Read more
-              </button>
-              <div class="review2-meta">Miami, FL</div>
-            </article>
-
-            <!-- Review 3 -->
-            <article class="review2-card">
-              <div class="review2-stars" aria-label="5 star rating">
-                ★★★★★
-              </div>
-
-              <p class="review2-text" data-name="EDUARDO D." data-stars="5"
-                data-full="Eduardo and Sosa are the best. Wow! What a team. We are so happy with the new installation. Excellent work gentlemen. Green Air Innovations deserves 10 stars!">
-                Eduardo and Sosa are the best. Wow! What a team. We are so
-                happy with the new installation. Excellent work gentlemen...
-              </p>
-
-              <button class="review2-link js-readmore" type="button">
-                Read more
-              </button>
-              <div class="review2-meta">Miami, FL</div>
-            </article>
-
-            <!-- Review 4 -->
-            <article class="review2-card">
-              <div class="review2-stars" aria-label="5 star rating">
-                ★★★★★
-              </div>
-
-              <p class="review2-text" data-name="DAVID M." data-stars="5"
-                data-full="David was very knowledgeable and courteous. I appreciate the time he spent inspecting my unit while keeping me informed on what he was doing every step of the way. Great customer service!">
-                David was very knowledgeable and courteous. I appreciate the
-                time he spent inspecting my unit while keeping me informed...
-              </p>
-
-              <button class="review2-link js-readmore" type="button">
-                Read more
-              </button>
-              <div class="review2-meta">Miami, FL</div>
-            </article>
+            <a class="financing-cta__btn" href="tel:+17869101693">
+              CALL FOR $1000 OFF NEW AC UNIT<span aria-hidden="true">▶</span>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- REVIEW MODAL | reviews.css-->
-    <div class="review-modal" id="reviewModal" aria-hidden="true">
-      <div class="review-modal__box" role="dialog" aria-modal="true">
-        <button class="review-modal__close" type="button" data-close="true" aria-label="Close">
-          ×
-        </button>
+      <!-- SERVICE GUARANTEE | service-guaranteee.css-->
+      <section class="ga-guarantee">
+        <div class="ga-guarantee__bar">
+          <!-- LEFT -->
+          <div class="ga-guarantee__left">
+            <h2 class="ga-guarantee__title">We Offer 1-Year<br />Guarantees</h2>
+          </div>
 
-        <div class="review-modal__stars" id="reviewModalStars"></div>
-        <div class="review-modal__text" id="reviewModalText"></div>
-        <div class="review-modal__name" id="reviewModalName"></div>
-      </div>
-    </div>
+          <!-- CENTER BADGE -->
+          <div class="ga-guarantee__badge">
+            <img
+              src="assets/images/guarantee-badge.svg"
+              alt="1 Year Service Guarantee"
+              loading="lazy"
+            />
+          </div>
 
-    <!-- SERVICE AREAS | service-areas.css -->
-    <section class="service-areas" id="service-area">
-      <div class="sa2-inner">
-        <!-- LEFT -->
-        <div class="sa2-left">
-          <h2 class="sa2-title">
-            We are proud to serve<br />the following areas:
-          </h2>
+          <!-- RIGHT LIST -->
+          <ul class="ga-guarantee__list">
+            <li class="ga-guarantee__item go-left">
+              <span class="ga-guarantee__ico" aria-hidden="true">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M25.7852 21.4133C25.2867 21.0425 24.582 21.146 24.2111 21.6445C24.0072 21.9186 23.7889 22.1876 23.5624 22.4438C23.1509 22.9093 23.1946 23.6203 23.6601 24.0318C23.8742 24.221 24.14 24.3139 24.4048 24.3139C24.716 24.3139 25.0258 24.1855 25.2481 23.934C25.5164 23.6306 25.7748 23.3121 26.0164 22.9874C26.3872 22.489 26.2838 21.7841 25.7852 21.4133Z"
+                    fill="#0767D8"
+                  />
+                  <path
+                    d="M27.6669 16.1371C27.0602 16.0049 26.4605 16.39 26.3284 16.997C26.2557 17.331 26.1678 17.6655 26.067 17.9916C25.8836 18.5852 26.2162 19.2151 26.8098 19.3985C26.9204 19.4327 27.0322 19.4489 27.1423 19.4489C27.6226 19.4489 28.0675 19.1388 28.2168 18.6557C28.3363 18.2688 28.4406 17.8717 28.5269 17.4756C28.659 16.8685 28.274 16.2692 27.6669 16.1371Z"
+                    fill="#0767D8"
+                  />
+                  <path
+                    d="M20.3704 25.0162C20.0718 25.1829 19.7625 25.3387 19.4513 25.4793C18.885 25.735 18.6333 26.4014 18.889 26.9676C19.0769 27.3837 19.4864 27.6299 19.915 27.6299C20.0698 27.6299 20.2271 27.5977 20.3774 27.5299C20.7465 27.3632 21.1132 27.1784 21.4673 26.9807C22.0098 26.6778 22.2041 25.9925 21.9011 25.45C21.5983 24.9076 20.913 24.7134 20.3704 25.0162Z"
+                    fill="#0767D8"
+                  />
+                  <path
+                    d="M13.2751 5.3999V13.9339L9.1498 18.0592C8.71048 18.4986 8.71048 19.2109 9.1498 19.6502C9.36951 19.8699 9.65734 19.9797 9.94534 19.9797C10.2332 19.9797 10.5212 19.8698 10.7409 19.6502L15.1957 15.1954C15.4066 14.9845 15.5251 14.6983 15.5251 14.3999V5.3999C15.5251 4.77856 15.0215 4.2749 14.4001 4.2749C13.7788 4.2749 13.2751 4.77856 13.2751 5.3999Z"
+                    fill="#0767D8"
+                  />
+                  <path
+                    d="M27.675 2.41875C27.0537 2.41875 26.55 2.92241 26.55 3.54375V6.66765C23.9314 2.56095 19.3585 0 14.4 0C10.5536 0 6.93748 1.49788 4.21763 4.21763C1.49788 6.93748 0 10.5536 0 14.4C0 18.2464 1.49788 21.8625 4.21763 24.5824C6.93748 27.3021 10.5536 28.8 14.4 28.8C14.4095 28.8 14.4187 28.7988 14.4281 28.7986C14.4376 28.7988 14.4467 28.8 14.4562 28.8C14.8617 28.8 15.2711 28.7829 15.6733 28.7493C16.2925 28.6974 16.7524 28.1535 16.7006 27.5343C16.6486 26.9152 16.1054 26.455 15.4856 26.5071C15.1456 26.5355 14.7993 26.55 14.4562 26.55C14.4467 26.55 14.4376 26.5512 14.4281 26.5514C14.4187 26.5512 14.4095 26.55 14.4 26.55C7.70046 26.55 2.25 21.0995 2.25 14.4C2.25 7.70046 7.70046 2.25 14.4 2.25C18.7176 2.25 22.6888 4.55136 24.8589 8.2125H21.7655C21.1442 8.2125 20.6405 8.71616 20.6405 9.3375C20.6405 9.95884 21.1442 10.4625 21.7655 10.4625H25.2C25.8851 10.4625 26.5261 10.27 27.0718 9.93639C27.1069 9.91637 27.1407 9.89482 27.1729 9.87159C28.1519 9.22747 28.8 8.11952 28.8 6.8625V3.54375C28.8 2.92241 28.2963 2.41875 27.675 2.41875Z"
+                    fill="#0767D8"
+                  />
+                </svg>
+              </span>
+              <span class="ga-guarantee__text"
+                >24-Hour Emergency Service Available</span
+              >
+            </li>
+
+            <li class="ga-guarantee__item go-left">
+              <span class="ga-guarantee__ico" aria-hidden="true">
+                <svg
+                  width="31"
+                  height="32"
+                  viewBox="0 0 31 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2403_241)">
+                    <g mask="url(#mask0_2403_241)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.3402 2.53746C11.3564 2.53746 10.5482 3.34562 10.5482 4.32946V4.64946H19.9562V4.32946C19.9562 3.34562 19.1481 2.53746 18.1642 2.53746H12.3402ZM9.01221 4.32946C9.01221 2.49731 10.5081 1.00146 12.3402 1.00146H18.1642C19.9963 1.00146 21.4922 2.49731 21.4922 4.32946V5.41746C21.4922 5.84162 21.1483 6.18546 20.7242 6.18546H9.78021C9.35605 6.18546 9.01221 5.84162 9.01221 5.41746V4.32946Z"
+                        fill="#0767D8"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.1499 4.20135C4.1499 3.77718 4.49375 3.43335 4.9179 3.43335H7.3499C7.77406 3.43335 8.1179 3.77718 8.1179 4.20135C8.1179 4.6255 7.77406 4.96935 7.3499 4.96935H5.6859V28.9693H24.8219V4.96935H23.1579C22.7337 4.96935 22.3899 4.6255 22.3899 4.20135C22.3899 3.77718 22.7337 3.43335 23.1579 3.43335H25.5899C26.0141 3.43335 26.3579 3.77718 26.3579 4.20135V29.7373C26.3579 30.1615 26.0141 30.5053 25.5899 30.5053H4.9179C4.49375 30.5053 4.1499 30.1615 4.1499 29.7373V4.20135Z"
+                        fill="#0767D8"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.9736 10.9547C14.2735 11.2546 14.2735 11.7409 13.9736 12.0408L10.3256 15.6888C10.1815 15.8328 9.98621 15.9137 9.78252 15.9137C9.57883 15.9137 9.38349 15.8328 9.23947 15.6888L6.80747 13.2568C6.50754 12.9569 6.50754 12.4706 6.80747 12.1707C7.10738 11.8708 7.59366 11.8708 7.89358 12.1707L9.78252 14.0596L12.8874 10.9547C13.1874 10.6548 13.6737 10.6548 13.9736 10.9547Z"
+                        fill="#0767D8"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.3101 13.9296C16.3101 13.5055 16.6539 13.1616 17.0781 13.1616H21.9421C22.3663 13.1616 22.7101 13.5055 22.7101 13.9296C22.7101 14.3538 22.3663 14.6976 21.9421 14.6976H17.0781C16.6539 14.6976 16.3101 14.3538 16.3101 13.9296Z"
+                        fill="#0767D8"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M13.9736 18.2507C14.2735 18.5506 14.2735 19.0368 13.9736 19.3367L10.3256 22.9847C10.0257 23.2846 9.53938 23.2846 9.23947 22.9847L6.80747 20.5527C6.50754 20.2528 6.50754 19.7666 6.80747 19.4667C7.10738 19.1666 7.59366 19.1666 7.89358 19.4667L9.78252 21.3556L12.8874 18.2507C13.1874 17.9506 13.6737 17.9506 13.9736 18.2507Z"
+                        fill="#0767D8"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.3101 21.2255C16.3101 20.8015 16.6539 20.4575 17.0781 20.4575H21.9421C22.3663 20.4575 22.7101 20.8015 22.7101 21.2255C22.7101 21.6497 22.3663 21.9935 21.9421 21.9935H17.0781C16.6539 21.9935 16.3101 21.6497 16.3101 21.2255Z"
+                        fill="#0767D8"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2403_241">
+                      <rect width="30.72" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <span class="ga-guarantee__text">Transparent<br />Pricing</span>
+            </li>
+
+            <li class="ga-guarantee__item">
+              <span class="ga-guarantee__ico" aria-hidden="true">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2403_262)">
+                    <path
+                      d="M7.16228 31.3531C6.81169 31.3531 6.46353 31.2437 6.16641 31.0289C5.61292 30.6277 5.35437 29.9382 5.50501 29.2729L7.56366 20.2046L0.582033 14.0819C0.0688363 13.6339 -0.127214 12.9244 0.0834851 12.2752C0.294184 11.6272 0.867441 11.1685 1.54617 11.1057L10.7837 10.2671L14.4359 1.72024C14.7052 1.0923 15.3185 0.686768 15.9999 0.686768C16.6813 0.686768 17.2946 1.0923 17.5639 1.71878L21.2161 10.2671L30.4522 11.1057C31.1324 11.167 31.7056 11.6272 31.9163 12.2752C32.127 12.9232 31.9322 13.6339 31.419 14.0819L24.4374 20.2034L26.496 29.2715C26.6469 29.9382 26.3881 30.6277 25.8349 31.0276C25.2829 31.4275 24.5468 31.4583 23.9654 31.1089L15.9999 26.3488L8.03437 31.1116C7.76508 31.2715 7.46502 31.3531 7.16228 31.3531ZM15.9999 24.2982C16.3027 24.2982 16.6025 24.3795 16.872 24.5394L24.3895 29.0356L22.4466 20.4766C22.3079 19.8674 22.5147 19.2314 22.9854 18.8193L29.5777 13.0379L20.856 12.2459C20.228 12.1885 19.688 11.7937 19.4426 11.2151L15.9999 3.14948L12.553 11.2163C12.3104 11.7911 11.7703 12.1858 11.1438 12.2432L2.42095 13.0352L9.01291 18.8166C9.48509 19.23 9.69164 19.8647 9.55175 20.4754L7.61029 29.0342L15.1278 24.5394C15.3971 24.3795 15.6972 24.2982 15.9999 24.2982ZM10.7132 10.4324C10.7132 10.4324 10.7132 10.4338 10.7117 10.4351L10.7132 10.4324ZM21.284 10.4285L21.2854 10.4312C21.2854 10.4297 21.2854 10.4297 21.284 10.4285Z"
+                      fill="#0767D8"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2403_262">
+                      <rect width="32" height="32" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <span class="ga-guarantee__text"
+                >20+ Years of<br />Experience</span
+              >
+            </li>
+
+            <li class="ga-guarantee__item go-right">
+              <span class="ga-guarantee__ico" aria-hidden="true">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.56 31.131C14.9867 31.131 14.44 30.891 14.0534 30.4777C11.0267 27.2377 3.98669 18.9843 4.00002 12.4377C4.00002 6.10433 9.18669 0.944336 15.56 0.944336C21.9334 0.944336 27.1201 6.091 27.1201 12.4243C27.1201 18.7577 20.0801 27.1977 17.0667 30.451C16.68 30.8643 16.1334 31.1043 15.56 31.1043V31.131ZM15.56 2.54433C10.0667 2.54433 5.58669 6.971 5.58669 12.4243C5.58669 18.5577 12.96 26.9443 15.2134 29.371C15.3334 29.5043 15.48 29.5177 15.5467 29.5177C15.6267 29.5177 15.76 29.5043 15.88 29.371C18.1334 26.9443 25.5067 18.531 25.5067 12.4243C25.5067 6.971 21.0401 2.54433 15.5334 2.54433H15.56Z"
+                    fill="#0767D8"
+                  />
+                  <path
+                    d="M15.5595 18.4645C12.3195 18.4645 9.69287 15.8379 9.69287 12.5979C9.69287 9.35787 12.3195 6.7312 15.5595 6.7312C18.7996 6.7312 21.4262 9.35787 21.4262 12.5979C21.4262 15.8379 18.7996 18.4645 15.5595 18.4645ZM15.5595 8.3312C13.2129 8.3312 11.2929 10.2512 11.2929 12.5979C11.2929 14.9445 13.2129 16.8645 15.5595 16.8645C17.9062 16.8645 19.8262 14.9445 19.8262 12.5979C19.8262 10.2512 17.9062 8.3312 15.5595 8.3312Z"
+                    fill="#0767D8"
+                  />
+                </svg>
+              </span>
+              <span class="ga-guarantee__text"
+                >Servicing All Of<br />South Florida</span
+              >
+            </li>
+          </ul>
         </div>
+      </section>
 
-        <!-- RIGHT -->
-        <div class="sa2-right" aria-label="Service areas by county">
-          <!-- Top row (2 cards) -->
-          <div class="sa2-row">
-            <!-- Broward -->
-            <article class="sa2-card">
-              <div class="sa2-card-head">
-                <span class="sa2-pin" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z" stroke="currentColor" stroke-width="2"
-                      stroke-linejoin="round" />
-                    <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
-                  </svg>
-                </span>
-                <h3 class="sa2-card-title">Miami-Dade County</h3>
-              </div>
+      <!-- REVIEWS | reviews.css-->
+      <section class="reviews-split" id="reviews">
+        <div class="reviews-split__inner">
+          <!-- LEFT -->
+          <div class="reviews-split__left">
+            <h2 class="reviews-split__title">
+              Trusted with 90+ Five Star Reviews
+            </h2>
+          </div>
 
-              <!-- <ul class="sa2-list sa2-list--2">
+          <!-- RIGHT -->
+          <div class="reviews-split__right">
+            <div class="reviews-split__track" aria-label="Customer reviews">
+              <!-- Review 1 -->
+              <article class="review2-card">
+                <div class="review2-stars" aria-label="5 star rating">
+                  ★★★★★
+                </div>
+
+                <p
+                  class="review2-text"
+                  data-name="CANDACE B."
+                  data-stars="5"
+                  data-full="I recently had a fantastic experience with Green Aire for some much-needed maintenance and repairs on our three A/C units. From start to finish, their service was top-notch. They replaced the ductwork and handled other essential maintenance tasks efficiently. The team was professional, punctual, and extremely knowledgeable, taking the time to explain what needed to be done and ensuring everything was functioning perfectly before they left. Our A/C units are running better than ever, and I truly appreciate how thorough their cleaning and servicing were. It’s clear that Green Aire takes pride in their work, and I’ll definitely be calling them again for future maintenance needs. Highly recommend!"
+                >
+                  I recently had a fantastic experience with Green Aire for some
+                  much-needed maintenance and repairs on our three A/C units.
+                  From start to finish, their service was top-notch...
+                </p>
+
+                <button class="review2-link js-readmore" type="button">
+                  Read more
+                </button>
+                <div class="review2-meta">Miami, FL</div>
+              </article>
+
+              <!-- Review 2 -->
+              <article class="review2-card">
+                <div class="review2-stars" aria-label="5 star rating">
+                  ★★★★★
+                </div>
+
+                <p
+                  class="review2-text"
+                  data-name="PATRICK A."
+                  data-stars="5"
+                  data-full="Exceptional service from start to finish! We had our entire air conditioning system and ductwork replaced, and the team was on time, professional, efficient, and incredibly knowledgeable. They explained every step of the process, worked quickly without cutting corners, and left everything spotless. The difference in our home’s comfort is night and day. Highly recommend them for any AC needs!"
+                >
+                  Exceptional service from start to finish! We had our entire
+                  air conditioning system and ductwork replaced, and the team
+                  was on time, professional, efficient...
+                </p>
+
+                <button class="review2-link js-readmore" type="button">
+                  Read more
+                </button>
+                <div class="review2-meta">Miami, FL</div>
+              </article>
+
+              <!-- Review 3 -->
+              <article class="review2-card">
+                <div class="review2-stars" aria-label="5 star rating">
+                  ★★★★★
+                </div>
+
+                <p
+                  class="review2-text"
+                  data-name="EDUARDO D."
+                  data-stars="5"
+                  data-full="Eduardo and Sosa are the best. Wow! What a team. We are so happy with the new installation. Excellent work gentlemen. Green Air Innovations deserves 10 stars!"
+                >
+                  Eduardo and Sosa are the best. Wow! What a team. We are so
+                  happy with the new installation. Excellent work gentlemen...
+                </p>
+
+                <button class="review2-link js-readmore" type="button">
+                  Read more
+                </button>
+                <div class="review2-meta">Miami, FL</div>
+              </article>
+
+              <!-- Review 4 -->
+              <article class="review2-card">
+                <div class="review2-stars" aria-label="5 star rating">
+                  ★★★★★
+                </div>
+
+                <p
+                  class="review2-text"
+                  data-name="DAVID M."
+                  data-stars="5"
+                  data-full="David was very knowledgeable and courteous. I appreciate the time he spent inspecting my unit while keeping me informed on what he was doing every step of the way. Great customer service!"
+                >
+                  David was very knowledgeable and courteous. I appreciate the
+                  time he spent inspecting my unit while keeping me informed...
+                </p>
+
+                <button class="review2-link js-readmore" type="button">
+                  Read more
+                </button>
+                <div class="review2-meta">Miami, FL</div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEW MODAL | reviews.css-->
+      <div class="review-modal" id="reviewModal" aria-hidden="true">
+        <div class="review-modal__box" role="dialog" aria-modal="true">
+          <button
+            class="review-modal__close"
+            type="button"
+            data-close="true"
+            aria-label="Close"
+          >
+            ×
+          </button>
+
+          <div class="review-modal__stars" id="reviewModalStars"></div>
+          <div class="review-modal__text" id="reviewModalText"></div>
+          <div class="review-modal__name" id="reviewModalName"></div>
+        </div>
+      </div>
+
+      <!-- SERVICE AREAS | service-areas.css -->
+      <section class="service-areas" id="service-area">
+        <div class="sa2-inner">
+          <!-- LEFT -->
+          <div class="sa2-left">
+            <h2 class="sa2-title">
+              We are proud to serve<br />the following areas:
+            </h2>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="sa2-right" aria-label="Service areas by county">
+            <!-- Top row (2 cards) -->
+            <div class="sa2-row">
+              <!-- Broward -->
+              <article class="sa2-card">
+                <div class="sa2-card-head">
+                  <span class="sa2-pin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <circle
+                        cx="12"
+                        cy="10"
+                        r="2.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </span>
+                  <h3 class="sa2-card-title">Miami-Dade County</h3>
+                </div>
+
+                <!-- <ul class="sa2-list sa2-list--2">
                   <li>Fort Lauderdale</li>
                   <li>Pembroke Pines</li>
                   <li>Hallandale</li>
                   <li>Hollywood</li>
                   <li>Pembroke Pines</li>
                 </ul> -->
-            </article>
+              </article>
 
-            <!-- Miami-Dade -->
-            <article class="sa2-card">
-              <div class="sa2-card-head">
-                <span class="sa2-pin" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none">
-                    <path d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z" stroke="currentColor" stroke-width="2"
-                      stroke-linejoin="round" />
-                    <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
-                  </svg>
-                </span>
-                <h3 class="sa2-card-title">Broward County</h3>
-              </div>
-              <!-- <ul class="sa2-list sa2-list--2">
+              <!-- Miami-Dade -->
+              <article class="sa2-card">
+                <div class="sa2-card-head">
+                  <span class="sa2-pin" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                      <circle
+                        cx="12"
+                        cy="10"
+                        r="2.5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </span>
+                  <h3 class="sa2-card-title">Broward County</h3>
+                </div>
+                <!-- <ul class="sa2-list sa2-list--2">
                   <li>Hialeah</li>
                   <li>Key Biscayne</li>
                   <li>Miami</li>
@@ -911,22 +1121,32 @@
                   <li>Homestead</li>
                   <li>Opa Locka</li>
                 </ul> -->
-            </article>
-          </div>
-
-          <!-- Bottom row (1 wide card) -->
-          <article class="sa2-card">
-            <div class="sa2-card-head">
-              <span class="sa2-pin" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none">
-                  <path d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z" stroke="currentColor" stroke-width="2"
-                    stroke-linejoin="round" />
-                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2" />
-                </svg>
-              </span>
-              <h3 class="sa2-card-title">Palm Beach County</h3>
+              </article>
             </div>
-            <!-- 
+
+            <!-- Bottom row (1 wide card) -->
+            <article class="sa2-card">
+              <div class="sa2-card-head">
+                <span class="sa2-pin" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 22s7-6.2 7-12A7 7 0 0 0 5 10c0 5.8 7 12 7 12Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="2.5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </span>
+                <h3 class="sa2-card-title">Palm Beach County</h3>
+              </div>
+              <!-- 
               <ul class="sa2-list sa2-list--3">
                 <li>Hialeah</li>
                 <li>Homestead</li>
@@ -937,369 +1157,407 @@
                 <li>North Miami Beach</li>
                 <li>Opa Locka</li>
               </ul> -->
-          </article>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CALL CTA BAR | call-cta.css -->
-    <section class="final-cta">
-      <!-- FULL WIDTH BLUE BACKGROUND -->
-      <div class="final-cta-bg-wrap">
-        <div class="final-cta-bg-card">
-          <!-- CENTERED CONTENT -->
-          <div class="final-cta-container">
-            <div class="final-cta-content">
-              <!-- LEFT -->
-              <div class="final-left">
-                <div class="final-logo-box">
-                  <img src="v1/assets/images/logo.svg" alt="Green Air" />
-                </div>
-
-                <h2 class="final-title">
-                  HVAC Problems Don’t Wait & Neither Should You
-                </h2>
-
-                <p class="final-desc">
-                  Whether you need a new HVAC system, fast emergency repairs, or expert maintenance, Cool Zone
-                  Engineering is ready to help, 24/7. Call now to schedule your free onsite estimate or request
-                  immediate HVAC service.
-                </p>
-
-                <a class="final-call" href="tel:+17869101693">
-                  <span class="final-call-top">24/7 Same Day Service</span>
-                  <span class="final-call-main">CALL (786) 910-1693</span>
-                </a>
-              </div>
-
-              <!-- RIGHT -->
-              <div class="final-right">
-                <div class="final-offer">
-                  <span class="final-offer-pill">$1000 OFF</span>
-                  <span class="final-offer-text">AC INSTALLATION</span>
-                </div>
-
-                <div class="final-offer-sub">GET A FREE ESTIMATE TODAY</div>
-
-                <form class="final-form" id="contactFormFooter" method="POST">
-                  <div class="final-grid">
-                    <div class="final-field">
-                      <label>NAME</label>
-                      <input type="text" name="full_name" placeholder="Name" required />
-                    </div>
-
-                    <div class="final-field">
-                      <label>COMPLETE ADDRESS</label>
-                      <input type="text" name="address" placeholder="Complete Address" required />
-                    </div>
-
-                    <div class="final-field">
-                      <label>PHONE NUMBER</label>
-                      <input type="tel" name="phone" placeholder="Phone Number" required />
-                    </div>
-
-                    <div class="final-field">
-                      <label>EMAIL ADDRESS</label>
-                      <input type="email" name="email" placeholder="Email Address" required />
-                    </div>
-
-                    <div class="final-field">
-                      <label>SELECT A SERVICE</label>
-                      <select class="form-select" name="service" required>
-                        <option value="" disabled selected>
-                          Select a Service
-                        </option>
-                        <option value="AC Repair">AC Repair</option>
-                        <option value="AC Installation">
-                          AC Installation
-                        </option>
-                      </select>
-                    </div>
-
-                    <div class="final-field final-recaptcha">
-                      <div class="recaptcha-scale">
-                        <div class="g-recaptcha" data-sitekey="6LfRsw8sAAAAABdUp0Ik49xYFOW5xkDWasTk-XDJ"></div>
-                      </div>
-                    </div>
+      <!-- CALL CTA BAR | call-cta.css -->
+      <section class="final-cta">
+        <!-- FULL WIDTH BLUE BACKGROUND -->
+        <div class="final-cta-bg-wrap">
+          <div class="final-cta-bg-card">
+            <!-- CENTERED CONTENT -->
+            <div class="final-cta-container">
+              <div class="final-cta-content">
+                <!-- LEFT -->
+                <div class="final-left">
+                  <div class="final-logo-box">
+                    <img src="assets/images/logo.svg" alt="Green Air" />
                   </div>
 
-                  <button class="final-submit" type="submit">
-                    GET HELP NOW ➤
-                  </button>
+                  <h2 class="final-title">
+                    Fix AC Problems Before They Get Worse
+                  </h2>
 
-                  <p class="final-note">
-                    All of your personal information is stored in a safe
-                    location.
+                  <p class="final-desc">
+                    Don't wait for leaks to become hot air or electrical issues
+                    to turn into costly replacements. Green Air Innovations is
+                    ready to help today.
                   </p>
-                </form>
+
+                  <a class="final-call" href="tel:+17869101693">
+                    <span class="final-call-top">24/7 Same Day Service</span>
+                    <span class="final-call-main">CALL (786) 910-1693</span>
+                  </a>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="final-right">
+                  <div class="final-offer">
+                    <span class="final-offer-pill">$1000 OFF</span>
+                    <span class="final-offer-text">AC INSTALLATION</span>
+                  </div>
+
+                  <div class="final-offer-sub">GET A FREE ESTIMATE TODAY</div>
+
+                  <form class="final-form" id="contactFormFooter" method="POST">
+                    <div class="final-grid">
+                      <div class="final-field">
+                        <label>NAME</label>
+                        <input
+                          type="text"
+                          name="full_name"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>COMPLETE ADDRESS</label>
+                        <input
+                          type="text"
+                          name="address"
+                          placeholder="Complete Address"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>PHONE NUMBER</label>
+                        <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>EMAIL ADDRESS</label>
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Email Address"
+                          required
+                        />
+                      </div>
+
+                      <div class="final-field">
+                        <label>SELECT A SERVICE</label>
+                        <select class="form-select" name="service" required>
+                          <option value="" disabled selected>
+                            Select a Service
+                          </option>
+                          <option value="AC Inspections">
+                              AC Inspections
+                            </option>
+                            <!-- <option value="AC Repair">AC Repair</option>
+                              <option value="AC Installation">
+                              AC Installation
+                            </option> -->
+                        </select>
+                      </div>
+
+                      <div class="final-field final-recaptcha">
+                        <div class="recaptcha-scale">
+                          <div
+                            class="g-recaptcha"
+                            data-sitekey="6LfRsw8sAAAAABdUp0Ik49xYFOW5xkDWasTk-XDJ"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="final-submit" type="submit">
+                      GET HELP NOW ➤
+                    </button>
+
+                    <p class="final-note">
+                      All of your personal information is stored in a safe
+                      location.
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <!-- FOOTER TEXT -->
+              <div class="final-bottom">
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                © <span>Copyright by</span>
+                <strong>Green Air Innovations & Astra Results Marketing.</strong
+                >&nbsp;<span>All Rights Reserved</span>
+              </div>
+              <div class="credits">
+                <span class="text-white"
+                  >Powered by
+                  <a href="https://astraresults.com/" class="fw-semibold"
+                    >Astra Results Marketing</a
+                  ></span
+                >
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- FOOTER TEXT -->
-            <div class="final-bottom">
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              © <span>Copyright by</span>
-              <strong>Green Air Innovations & Astra Results Marketing.</strong>&nbsp;<span>All Rights Reserved</span>
+      <!-- RECAPTCHA Professional Popup Modal -->
+      <div class="ui-modal" id="uiModal" aria-hidden="true">
+        <div class="ui-modal__backdrop" data-ui-close></div>
+
+        <div
+          class="ui-modal__card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="uiModalTitle"
+        >
+          <div class="ui-modal__header">
+            <div class="ui-modal__icon">!</div>
+            <div>
+              <div class="ui-modal__title" id="uiModalTitle">
+                Action required
+              </div>
+              <div class="ui-modal__subtitle">
+                Please review the message below.
+              </div>
             </div>
-            <div class="credits">
-              <span class="text-white">Powered by
-                <a href="https://astraresults.com/" class="fw-semibold">Astra Results Marketing</a></span>
-            </div>
+          </div>
+
+          <div class="ui-modal__body" id="uiModalMsg">
+            <!-- message injected by JS -->
+          </div>
+
+          <div class="ui-modal__footer">
+            <button type="button" class="ui-modal__btn" data-ui-close>
+              OK
+            </button>
           </div>
         </div>
       </div>
-    </section>
+    </main>
 
-    <!-- RECAPTCHA Professional Popup Modal -->
-    <div class="ui-modal" id="uiModal" aria-hidden="true">
-      <div class="ui-modal__backdrop" data-ui-close></div>
+    <!-- Geotarget (updates #location) -->
+    <script src="assets/js/mail.js"></script>
+    <script src="assets/js/geotarget.js" defer></script>
 
-      <div class="ui-modal__card" role="dialog" aria-modal="true" aria-labelledby="uiModalTitle">
-        <div class="ui-modal__header">
-          <div class="ui-modal__icon">!</div>
-          <div>
-            <div class="ui-modal__title" id="uiModalTitle">
-              Action required
-            </div>
-            <div class="ui-modal__subtitle">
-              Please review the message below.
-            </div>
-          </div>
-        </div>
+    <!-- Optional: mirror location text into hero pill -->
+    <script>
+      // If your geotarget updates #location, copy it to heroLocation as well
+      window.addEventListener("load", () => {
+        const headerLoc = document.getElementById("location");
+        const heroLoc = document.getElementById("heroLocation");
+        if (headerLoc && heroLoc) heroLoc.textContent = headerLoc.textContent;
+      });
+    </script>
 
-        <div class="ui-modal__body" id="uiModalMsg">
-          <!-- message injected by JS -->
-        </div>
+    <script>
+      (() => {
+        const wrap = document.querySelector(".hero-steps");
+        if (!wrap) return;
 
-        <div class="ui-modal__footer">
-          <button type="button" class="ui-modal__btn" data-ui-close>
-            OK
-          </button>
-        </div>
-      </div>
-    </div>
-  </main>
+        const steps = Array.from(document.querySelectorAll(".hero-step"));
+        const nextBtn = document.getElementById("heroNextBtn");
+        const submitBtn = document.getElementById("heroSubmitBtn");
+        const stepNum = document.getElementById("heroStepNum");
 
-  <!-- Geotarget (updates #location) -->
-  <script src="v2/assets/js/mail.js"></script>
-  <script src="v2/assets/js/geotarget.js" defer></script>
+        let current = 1;
 
-  <!-- Optional: mirror location text into hero pill -->
-  <script>
-    // If your geotarget updates #location, copy it to heroLocation as well
-    window.addEventListener("load", () => {
-      const headerLoc = document.getElementById("location");
-      const heroLoc = document.getElementById("heroLocation");
-      if (headerLoc && heroLoc) heroLoc.textContent = headerLoc.textContent;
-    });
-  </script>
+        function show(step) {
+          current = step;
+          wrap.setAttribute("data-step", String(step));
 
-  <script>
-    (() => {
-      const wrap = document.querySelector(".hero-steps");
-      if (!wrap) return;
+          steps.forEach((s) =>
+            s.classList.toggle("is-active", s.dataset.step == String(step))
+          );
 
-      const steps = Array.from(document.querySelectorAll(".hero-step"));
-      const nextBtn = document.getElementById("heroNextBtn");
-      const submitBtn = document.getElementById("heroSubmitBtn");
-      const stepNum = document.getElementById("heroStepNum");
+          const isLast = step === 3;
+          nextBtn.style.display = isLast ? "none" : "inline-flex";
+          submitBtn.style.display = isLast ? "inline-flex" : "none";
 
-      let current = 1;
-
-      function show(step) {
-        current = step;
-        wrap.setAttribute("data-step", String(step));
-
-        steps.forEach((s) =>
-          s.classList.toggle("is-active", s.dataset.step == String(step))
-        );
-
-        const isLast = step === 3;
-        nextBtn.style.display = isLast ? "none" : "inline-flex";
-        submitBtn.style.display = isLast ? "inline-flex" : "none";
-
-        if (stepNum) stepNum.textContent = String(step);
-      }
-
-      function validateStep(step) {
-        const panel = steps.find((s) => s.dataset.step == String(step));
-        if (!panel) return true;
-
-        const fields = Array.from(
-          panel.querySelectorAll("input, select, textarea")
-        ).filter((el) => el.hasAttribute("required"));
-
-        for (const el of fields) {
-          if (!el.checkValidity()) {
-            el.reportValidity();
-            return false;
-          }
+          if (stepNum) stepNum.textContent = String(step);
         }
-        return true;
-      }
 
-      nextBtn.addEventListener("click", () => {
-        if (!validateStep(current)) return;
-        show(Math.min(3, current + 1));
-      });
+        function validateStep(step) {
+          const panel = steps.find((s) => s.dataset.step == String(step));
+          if (!panel) return true;
 
-      show(1);
-    })();
-  </script>
+          const fields = Array.from(
+            panel.querySelectorAll("input, select, textarea")
+          ).filter((el) => el.hasAttribute("required"));
 
-  <!-- REVIEW MODAL SCRIPT -->
-  <script>
-    (() => {
-      const modal = document.getElementById("reviewModal");
-      const modalText = document.getElementById("reviewModalText");
-      const modalName = document.getElementById("reviewModalName");
-      const modalStars = document.getElementById("reviewModalStars");
-
-      if (!modal || !modalText || !modalName || !modalStars) return;
-
-      function openModal({ text, name, stars }) {
-        modal.classList.add("is-open");
-        modal.setAttribute("aria-hidden", "false");
-
-        modalText.textContent = text || "";
-        modalName.textContent = name || "";
-
-        const count = Math.max(1, Math.min(5, parseInt(stars || "5", 10)));
-        modalStars.textContent =
-          "★★★★★".slice(0, count) + "☆☆☆☆☆".slice(0, 5 - count);
-
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeModal() {
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        document.body.style.overflow = "";
-      }
-
-      document.addEventListener("click", (e) => {
-        const btn = e.target.closest(".js-readmore");
-        if (!btn) return;
-
-        const card = btn.closest(".review2-card");
-        const p = card?.querySelector(".review2-text");
-        if (!p) return;
-
-        openModal({
-          text: p.getAttribute("data-full") || p.textContent.trim(),
-          name: p.getAttribute("data-name") || "",
-          stars: p.getAttribute("data-stars") || "5",
-        });
-      });
-
-      modal.addEventListener("click", (e) => {
-        if (e.target.matches("[data-close='true']")) closeModal();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && modal.classList.contains("is-open"))
-          closeModal();
-      });
-    })();
-  </script>
-
-  <script>
-    (() => {
-      const btn = document.getElementById("footerTopBtn");
-      if (!btn) return;
-      btn.addEventListener("click", () =>
-        window.scrollTo({ top: 0, behavior: "smooth" })
-      );
-    })();
-  </script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // ✅ Modal helpers
-      const uiModal = document.getElementById("uiModal");
-      const uiModalMsg = document.getElementById("uiModalMsg");
-
-      function openUiModal(message) {
-        if (!uiModal || !uiModalMsg) return;
-        uiModalMsg.textContent = message;
-        uiModal.classList.add("is-open");
-        uiModal.setAttribute("aria-hidden", "false");
-      }
-
-      function closeUiModal() {
-        if (!uiModal) return;
-        uiModal.classList.remove("is-open");
-        uiModal.setAttribute("aria-hidden", "true");
-      }
-
-      // close handlers
-      if (uiModal) {
-        uiModal.addEventListener("click", (e) => {
-          if (e.target && e.target.hasAttribute("data-ui-close"))
-            closeUiModal();
-        });
-      }
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeUiModal();
-      });
-
-      // ===== your form validation logic =====
-      const forms = [
-        document.querySelector("form.hero-form"),
-        document.querySelector("form.final-form"),
-      ].filter(Boolean);
-
-      const widgetByForm = new Map();
-
-      if (
-        typeof grecaptcha !== "undefined" &&
-        typeof grecaptcha.render === "function"
-      ) {
-        forms.forEach((form) => {
-          const el = form.querySelector(".g-recaptcha");
-          if (!el) return;
-          if (el.dataset.rendered === "true") return;
-
-          const widgetId = grecaptcha.render(el, {
-            sitekey: el.getAttribute("data-sitekey"),
-            size: el.getAttribute("data-size") || "normal",
-          });
-
-          el.dataset.rendered = "true";
-          el.dataset.widgetId = String(widgetId);
-          widgetByForm.set(form, widgetId);
-        });
-      }
-
-      forms.forEach((form) => {
-        form.addEventListener("submit", (e) => {
-          if (!form.checkValidity()) {
-            e.preventDefault();
-            form.reportValidity();
-            return;
-          }
-
-          if (typeof grecaptcha !== "undefined") {
-            const wid = widgetByForm.get(form);
-            const response =
-              typeof wid === "number"
-                ? grecaptcha.getResponse(wid)
-                : grecaptcha.getResponse();
-
-            if (!response) {
-              e.preventDefault();
-              openUiModal("Please complete the reCAPTCHA to submit.");
+          for (const el of fields) {
+            if (!el.checkValidity()) {
+              el.reportValidity();
+              return false;
             }
           }
+          return true;
+        }
+
+        nextBtn.addEventListener("click", () => {
+          if (!validateStep(current)) return;
+          show(Math.min(3, current + 1));
+        });
+
+        show(1);
+      })();
+    </script>
+
+    <!-- REVIEW MODAL SCRIPT -->
+    <script>
+      (() => {
+        const modal = document.getElementById("reviewModal");
+        const modalText = document.getElementById("reviewModalText");
+        const modalName = document.getElementById("reviewModalName");
+        const modalStars = document.getElementById("reviewModalStars");
+
+        if (!modal || !modalText || !modalName || !modalStars) return;
+
+        function openModal({ text, name, stars }) {
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+
+          modalText.textContent = text || "";
+          modalName.textContent = name || "";
+
+          const count = Math.max(1, Math.min(5, parseInt(stars || "5", 10)));
+          modalStars.textContent =
+            "★★★★★".slice(0, count) + "☆☆☆☆☆".slice(0, 5 - count);
+
+          document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+        }
+
+        document.addEventListener("click", (e) => {
+          const btn = e.target.closest(".js-readmore");
+          if (!btn) return;
+
+          const card = btn.closest(".review2-card");
+          const p = card?.querySelector(".review2-text");
+          if (!p) return;
+
+          openModal({
+            text: p.getAttribute("data-full") || p.textContent.trim(),
+            name: p.getAttribute("data-name") || "",
+            stars: p.getAttribute("data-stars") || "5",
+          });
+        });
+
+        modal.addEventListener("click", (e) => {
+          if (e.target.matches("[data-close='true']")) closeModal();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("is-open"))
+            closeModal();
+        });
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const btn = document.getElementById("footerTopBtn");
+        if (!btn) return;
+        btn.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        );
+      })();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // ✅ Modal helpers
+        const uiModal = document.getElementById("uiModal");
+        const uiModalMsg = document.getElementById("uiModalMsg");
+
+        function openUiModal(message) {
+          if (!uiModal || !uiModalMsg) return;
+          uiModalMsg.textContent = message;
+          uiModal.classList.add("is-open");
+          uiModal.setAttribute("aria-hidden", "false");
+        }
+
+        function closeUiModal() {
+          if (!uiModal) return;
+          uiModal.classList.remove("is-open");
+          uiModal.setAttribute("aria-hidden", "true");
+        }
+
+        // close handlers
+        if (uiModal) {
+          uiModal.addEventListener("click", (e) => {
+            if (e.target && e.target.hasAttribute("data-ui-close"))
+              closeUiModal();
+          });
+        }
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closeUiModal();
+        });
+
+        // ===== your form validation logic =====
+        const forms = [
+          document.querySelector("form.hero-form"),
+          document.querySelector("form.final-form"),
+        ].filter(Boolean);
+
+        const widgetByForm = new Map();
+
+        if (
+          typeof grecaptcha !== "undefined" &&
+          typeof grecaptcha.render === "function"
+        ) {
+          forms.forEach((form) => {
+            const el = form.querySelector(".g-recaptcha");
+            if (!el) return;
+            if (el.dataset.rendered === "true") return;
+
+            const widgetId = grecaptcha.render(el, {
+              sitekey: el.getAttribute("data-sitekey"),
+              size: el.getAttribute("data-size") || "normal",
+            });
+
+            el.dataset.rendered = "true";
+            el.dataset.widgetId = String(widgetId);
+            widgetByForm.set(form, widgetId);
+          });
+        }
+
+        forms.forEach((form) => {
+          form.addEventListener("submit", (e) => {
+            if (!form.checkValidity()) {
+              e.preventDefault();
+              form.reportValidity();
+              return;
+            }
+
+            if (typeof grecaptcha !== "undefined") {
+              const wid = widgetByForm.get(form);
+              const response =
+                typeof wid === "number"
+                  ? grecaptcha.getResponse(wid)
+                  : grecaptcha.getResponse();
+
+              if (!response) {
+                e.preventDefault();
+                openUiModal("Please complete the reCAPTCHA to submit.");
+              }
+            }
+          });
         });
       });
-    });
-  </script>
+    </script>
 
-  <!-- CallRail -->
-  <!-- <script type="text/javascript" src="//cdn.callrail.com/companies/422799458/c445b8d648055605a4f5/12/swap.js"></script> -->
-</body>
-
+    <!-- CallRail -->
+    <script
+      type="text/javascript"
+      src="//cdn.callrail.com/companies/422799458/c445b8d648055605a4f5/12/swap.js"
+    ></script>
+  </body>
 </html>

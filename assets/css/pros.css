@@ -76,7 +76,7 @@
 }
 
 .pros-btn {
-    background: #10b84a;
+    background: #ec8c35;
     color: #fff;
     border-radius: 10px;
     padding: 14px 18px;
@@ -91,6 +91,7 @@
     gap: 10px;
     min-width: 420px;
     transition: transform .18s ease, filter .18s ease;
+    box-shadow: 0 5px 15px rgb(236, 140, 53);
 }
 
 .pros-btn:hover {

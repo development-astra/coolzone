@@ -108,12 +108,12 @@
 /* CALL BUTTON */
 .final-call {
   display: inline-block;
-  background: #0bb44b;
+  background: #ec8c35;
   border-radius: 12px;
   padding: 16px 22px;
   text-decoration: none;
   color: #fff;
-  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 15px rgb(236, 140, 53);
 }
 
 .final-call-top {
@@ -215,11 +215,12 @@
   height: 54px;
   border-radius: 12px;
   border: none;
-  background: #0bb44b;
+  background: #ec8c35;
   color: #fff;
   font-weight: 900;
   font-size: 20px;
   cursor: pointer;
+  box-shadow: 0 5px 15px rgb(236, 140, 53);
 }
 
 /* NOTE */

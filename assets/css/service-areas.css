@@ -65,7 +65,7 @@
 
 /* cards */
 .sa2-card {
-    border: 2px solid #00c853;
+    border: 2px solid #ec8c35;
     /* green border like reference */
     border-radius: 16px;
     background: #ffffff;
@@ -87,7 +87,7 @@
 .sa2-pin {
     width: 22px;
     height: 22px;
-    color: #00c853;
+    color: #ec8c35;
     flex: 0 0 auto;
     display: inline-block;
 }

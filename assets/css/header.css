@@ -62,10 +62,10 @@ body {
 
 /* Call Now */
 .btn-solid {
-    background: #18b75a;
+    background: #ec8c35;
     color: #fff;
-    border: 2px solid #18b75a;
-    box-shadow: 0 10px 5px rgb(37, 176, 94);
+    border: 2px solid #ec8c35;
+    box-shadow: 0 5px 15px rgb(236, 140, 53);
 }
 
 .call-wrap {
@@ -76,14 +76,11 @@ body {
     line-height: 1.1;
 }
 
-.call-wrap .btn-solid {
+.btn-solid {
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 900;
-
-    height: clamp(56px, 5vw, 98px);
-    padding: 0 clamp(14px, 1.8vw, 26px);
-    font-size: clamp(20px, 3.8vw, 60px);
-
+    height: clamp(56px, 5vw, 78px);
+    font-size: clamp(30px, 4.8vw, 36px);
     width: 100%;
     justify-content: center;
     line-height: 3.05;
@@ -93,7 +90,7 @@ body {
 .call-sub {
     margin-top: clamp(8px, 1.2vw, 18px);
     font-size: clamp(14px, 1.8vw, 28px);
-    color: #0270e9;
+    color: #50aad3;
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 700;
     align-items: center;
@@ -128,7 +125,7 @@ body {
 
     .call-wrap .btn-solid {
         height: 56px;
-        font-size: 20px;
+        font-size: 10px;
         padding: 0 14px;
     }
 
@@ -220,7 +217,7 @@ body {
         text-decoration: none;
         font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
         font-weight: 800;
-        font-size: 15px;
+        font-size: 10px;
 
         border-radius: 999px;
         border: 2px solid currentColor;
@@ -249,11 +246,10 @@ body {
     }
 
     .call-wrap .btn-solid {
-        box-shadow: 0 10px 5px rgb(37, 176, 94);
         height: auto;
         border-radius: 10px;
         padding: 12px 10px;
-        font-size: 25px;
+        font-size: 20px;
         line-height: 1;
         white-space: normal;
         text-align: center;
@@ -282,7 +278,6 @@ body {
     }
 
     .call-wrap .btn-solid {
-        box-shadow: 0 10px 5px rgb(37, 176, 94);
         height: auto;
         border-radius: 10px;
         padding: 12px 10px;

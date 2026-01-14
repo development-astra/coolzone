@@ -85,7 +85,7 @@
 .review2-stars {
     font-size: 18px;
     letter-spacing: 2px;
-    color: #16a34a;
+    color: #ec8c35;
     /* green stars like reference */
     margin-bottom: 12px;
 }
@@ -116,7 +116,7 @@
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: #0b57d0;
+    color: #ec8c35;
     text-align: left;
 }
 
@@ -258,7 +258,7 @@
 .review-modal__stars {
     font-size: 20px;
     letter-spacing: 3px;
-    color: #16a34a;
+    color: #ec8c35;
 }
 
 /* text */
@@ -278,7 +278,7 @@
     font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     font-weight: 800;
     font-size: 14px;
-    color: #0b57d0;
+    color: #ec8c35;
 }
 
 /* =========================

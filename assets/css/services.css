@@ -75,9 +75,10 @@
 .services-grid {
     margin-top: 42px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
     gap: 44px 34px;
     align-items: start;
+    justify-content: center;
 }
 
 /* SERVICE ITEM */
@@ -146,14 +147,36 @@
    RESPONSIVE
 ========================= */
 
-@media (min-width: 1101px){
-  .services-grid > .svc-item:nth-last-child(2):nth-child(4n+1){
-    grid-column: 2; /* start at column 2 */
-  }
-  .services-grid > .svc-item:last-child:nth-child(4n+2){
-    grid-column: 3; /* put the next one at column 3 */
-  }
+@media (min-width: 1101px) {
+    .services-grid>.svc-item:nth-last-child(2):nth-child(4n+1) {
+        grid-column: 2;
+        /* start at column 2 */
+    }
+
+    .services-grid>.svc-item:last-child:nth-child(4n+2) {
+        grid-column: 3;
+        /* put the next one at column 3 */
+    }
+
+    .services--five .services-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    /* each item takes 2 columns => 3 items per row */
+    .services--five .services-grid>.svc-item {
+        grid-column: span 2;
+    }
+
+    /* center the last row (items 4 & 5) */
+    .services--five .services-grid>.svc-item:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .services--five .services-grid>.svc-item:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
 }
+
 
 @media (max-width: 1100px) {
     .services-grid {

@@ -49,8 +49,14 @@
     <link rel="stylesheet" href="assets/css/call-cta.css" />
     <link rel="stylesheet" href="assets/css/recaptcha.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+
     <!-- Google reCAPTCHA v2 -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit"
+      async
+      defer
+    ></script>
+    
     <style>
       .disabled-link {
         pointer-events: none; /* disables click */
